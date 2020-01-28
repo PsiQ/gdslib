@@ -1,0 +1,19 @@
+{
+  "json_version": 6,
+  "cells": {
+    "bend_s": {
+      "name": "bend_s",
+      "class": "bend_s",
+      "width": 0.5,
+      "height": 2,
+      "length": 10,
+      "layer": 1,
+      "nb_points": 99,
+      "name_function": "bend_s",
+      "hash": "c810a323653e3feb5c57f710c3b69d6d"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

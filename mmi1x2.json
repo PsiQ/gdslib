@@ -1,0 +1,21 @@
+{
+  "json_version": 6,
+  "cells": {
+    "mmi1x2": {
+      "name": "mmi1x2",
+      "class": "mmi1x2",
+      "wg_width": 0.5,
+      "width_taper": 1.0,
+      "length_taper": 10,
+      "length_mmi": 5.496,
+      "width_mmi": 2.5,
+      "gap_mmi": 0.25,
+      "layer": 1,
+      "name_function": "mmi1x2",
+      "hash": "7f6ecdc626346b973fa33b177ef1b4da"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

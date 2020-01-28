@@ -1,0 +1,19 @@
+{
+  "json_version": 6,
+  "cells": {
+    "waveguide": {
+      "name": "waveguide",
+      "class": "waveguide",
+      "length": 10,
+      "width": 0.5,
+      "layer": 1,
+      "layer_cladding": 111,
+      "cladding_offset": 3,
+      "name_function": "waveguide",
+      "hash": "799f151b792f7a9d91b2ee8dff5f2979"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

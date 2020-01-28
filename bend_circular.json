@@ -1,0 +1,22 @@
+{
+  "json_version": 6,
+  "cells": {
+    "bend_circular": {
+      "name": "bend_circular",
+      "class": "bend_circular",
+      "radius": 10.0,
+      "width": 0.5,
+      "theta": -90,
+      "start_angle": 0,
+      "angle_resolution": 2.5,
+      "layer": 1,
+      "cladding_layer": 111,
+      "cladding_offset": 3,
+      "name_function": "bend_circular",
+      "hash": "d8e055517951eb160c8cdfc5c64814a0"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

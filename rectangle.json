@@ -1,0 +1,19 @@
+{
+  "json_version": 6,
+  "cells": {
+    "rectangle": {
+      "name": "rectangle",
+      "class": "rectangle",
+      "size": "4_2",
+      "layer": 0,
+      "centered": "False",
+      "ports_parameters": "",
+      "port_settings": "_empty",
+      "name_function": "rectangle",
+      "hash": "a20f948eec523146d8dfbb0f0b04e8c8"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

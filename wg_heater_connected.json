@@ -1,0 +1,18 @@
+{
+  "json_version": 6,
+  "cells": {
+    "wg_heater_connected": {
+      "name": "wg_heater_connected",
+      "class": "wg_heater_connected",
+      "waveguide_heater": "waveguide_heater",
+      "wg_heater_connector": "wg_heater_connector",
+      "tlm_layers": "40_41_44_45_43_49",
+      "kwargs": "_empty",
+      "name_function": "wg_heater_connected",
+      "hash": "2e27eaced47a9d1b541d462657c814d2"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

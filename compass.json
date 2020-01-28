@@ -1,0 +1,16 @@
+{
+  "json_version": 6,
+  "cells": {
+    "compass": {
+      "name": "compass",
+      "class": "compass",
+      "size": "4_2",
+      "layer": 1,
+      "name_function": "compass",
+      "hash": "78df8346626b42dfb52347e2b2920925"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

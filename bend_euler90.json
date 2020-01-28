@@ -1,0 +1,18 @@
+{
+  "json_version": 6,
+  "cells": {
+    "bend_euler90": {
+      "name": "bend_euler90",
+      "class": "bend_euler90",
+      "radius": 10.0,
+      "width": 0.5,
+      "resolution": 150.0,
+      "layer": 1,
+      "name_function": "bend_euler90",
+      "hash": "bc118496f5a0d0c0b779af4a7d9a839b"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

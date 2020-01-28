@@ -1,0 +1,18 @@
+{
+  "json_version": 6,
+  "cells": {
+    "coupler_asymmetric": {
+      "name": "coupler_asymmetric",
+      "class": "coupler_asymmetric",
+      "bend": "bend_s",
+      "waveguide": "waveguide",
+      "gap": 0.234,
+      "wg_width": 0.5,
+      "name_function": "coupler_asymmetric",
+      "hash": "100e8040de28d0bb10fafc70afa0627b"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

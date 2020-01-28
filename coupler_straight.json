@@ -1,0 +1,18 @@
+{
+  "json_version": 6,
+  "cells": {
+    "coupler_straight": {
+      "name": "coupler_straight",
+      "class": "coupler_straight",
+      "length": 10,
+      "width": 0.5,
+      "gap": 0.27,
+      "layer": 1,
+      "name_function": "coupler_straight",
+      "hash": "66e075c0945161eb714c80272be5b6c2"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

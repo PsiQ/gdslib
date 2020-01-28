@@ -1,0 +1,18 @@
+{
+  "json_version": 6,
+  "cells": {
+    "ring": {
+      "name": "ring",
+      "class": "ring",
+      "radius": 10,
+      "width": 0.5,
+      "angle_resolution": 2.5,
+      "layer": 0,
+      "name_function": "ring",
+      "hash": "db3ef2f289c192784bd7ab993c5dd55c"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

@@ -1,0 +1,30 @@
+{
+  "json_version": 6,
+  "cells": {
+    "spiral_inner_io_euler": {
+      "name": "spiral_inner_io_euler",
+      "class": "spiral_inner_io_euler",
+      "N": 7,
+      "x_straight_inner_right": 0.0,
+      "x_straight_inner_left": 160.0,
+      "y_straight_inner_top": 0.0,
+      "y_straight_inner_bottom": 0.0,
+      "grating_spacing": 127.0,
+      "dx": 3.0,
+      "dy": 3.0,
+      "bend90_function": "bend_euler90",
+      "bend180_function": "bend_euler180",
+      "bend_radius": 40,
+      "wg_width": 0.5,
+      "wg_width_grating_coupler": 0.5,
+      "straight_factory": "waveguide",
+      "taper": "None",
+      "length": "17261.64195632832",
+      "name_function": "spiral_inner_io_euler",
+      "hash": "968ab54ea3c5c6d239173c6ebb97bc05"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

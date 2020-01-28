@@ -1,0 +1,19 @@
+{
+  "json_version": 6,
+  "cells": {
+    "taper": {
+      "name": "taper",
+      "class": "taper",
+      "length": 35.0,
+      "width1": 0.5,
+      "width2": "None",
+      "port": "None",
+      "layer": 1,
+      "name_function": "taper",
+      "hash": "aeefb7a374b40e44bf415c1d2f4c538e"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

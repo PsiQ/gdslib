@@ -1,0 +1,21 @@
+{
+  "json_version": 6,
+  "cells": {
+    "grating_coupler_uniform": {
+      "name": "grating_coupler_uniform",
+      "class": "grating_coupler_uniform",
+      "num_teeth": 20,
+      "period": 0.75,
+      "fill_factor": 0.5,
+      "width_grating": 11,
+      "length_taper": 150,
+      "width": 0.5,
+      "partial_etch": "False",
+      "name_function": "grating_coupler_uniform",
+      "hash": "9e1319d0764d6c32253affd03b01741e"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

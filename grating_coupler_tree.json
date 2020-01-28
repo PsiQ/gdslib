@@ -1,0 +1,26 @@
+{
+  "json_version": 6,
+  "cells": {
+    "grating_coupler_tree": {
+      "name": "grating_coupler_tree",
+      "class": "grating_coupler_tree",
+      "settings": "name_hash",
+      "n_waveguides": 4,
+      "waveguide_spacing": 4,
+      "waveguide_function": "waveguide",
+      "grating_coupler_function": "grating_coupler_elliptical_te",
+      "with_loop_back": "False",
+      "component_name": "None",
+      "route_filter": "connect_strip_way_points_no_taper",
+      "bend_factory": "bend_circular",
+      "bend_radius": 10.0,
+      "layer_label": "None",
+      "kwargs": "_empty",
+      "name_function": "grating_coupler_tree",
+      "hash": "096332550ae9156cc25eedd4692ec492"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

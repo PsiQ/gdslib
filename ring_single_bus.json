@@ -1,0 +1,16 @@
+{
+  "json_version": 6,
+  "cells": {
+    "ring_single_bus": {
+      "name": "ring_single_bus",
+      "class": "ring_single_bus",
+      "kwargs": "_empty",
+      "netlist": "{'name': 'CL', 'rank': 0, 'ports': ['E0', 'N0', 'W0'], 'settings': {'bend_radius': 5, 'width': 0p5, 'gap': 0p2}}_{'name': 'CR', 'rank': 0, 'ports': ['E0', 'N0', 'W0'], 'settings': {'bend_radius': 5, 'width': 0p5, 'gap': 0p2}}_{'name': 'BR', 'rank': 0, 'ports': ['N0', 'W0'], 'settings': {'radius': 5, 'width': 0p5, 'theta': -90, 'start_angle': 0, 'angle_resolution': 2p5, 'layer': 1, 'cladding_layer': 111, 'cladding_offset': 3}}_{'name': 'BL', 'rank': 0, 'ports': ['N0', 'W0'], 'settings': {'radius': 5, 'width': 0p5, 'theta': -90, 'start_angle': 0, 'angle_resolution': 2p5, 'layer': 1, 'cladding_layer': 111, 'cladding_offset': 3}}_{'name': 'CS', 'rank': 0, 'ports': ['W0', 'E0'], 'settings': {'length': 1, 'width': 0p5, 'gap': 0p2, 'layer': 1}}_{'name': 'H1', 'rank': 0, 'ports': ['W0', 'E0'], 'settings': {'length': 1, 'width': 0p5, 'layer': 1, 'layer_cladding': 111, 'cladding_offset': 3}}_{'name': 'VL', 'rank': 0, 'ports': ['W0', 'E0'], 'settings': {'length': 1, 'width': 0p5, 'layer': 1, 'layer_cladding': 111, 'cladding_offset': 3}}_{'name': 'VR', 'rank': 0, 'ports': ['W0', 'E0'], 'settings': {'length': 1, 'width': 0p5, 'layer': 1, 'layer_cladding': 111, 'cladding_offset': 3}}_{'name': 'component_name', 'rank': 1, 'type': 'COMPOUND', 'settings': {}, 'connections': ['CL, W0, CS, W0', 'CS, E0, CR, W0', 'CR, N0, VR, W0', 'VR, E0, BR, N0', 'BR, W0, H1, E0', 'H1, W0, BL, W0', 'BL, N0, VL, E0', 'VL, W0, CL, N0'], 'ports': {'W0': 'CL, E0', 'E0': 'CR, E0'}}",
+      "name_function": "ring_single_bus",
+      "hash": "f2cd45c7ef9d097f777a65e21b725598"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

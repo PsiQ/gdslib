@@ -1,0 +1,17 @@
+{
+  "json_version": 6,
+  "cells": {
+    "coupler_symmetric": {
+      "name": "coupler_symmetric",
+      "class": "coupler_symmetric",
+      "bend": "bend_s",
+      "gap": 0.234,
+      "wg_width": 0.5,
+      "name_function": "coupler_symmetric",
+      "hash": "36df16e1b560741e63fa742f7e653989"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}

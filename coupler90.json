@@ -1,0 +1,17 @@
+{
+  "json_version": 6,
+  "cells": {
+    "coupler90": {
+      "name": "coupler90",
+      "class": "coupler90",
+      "bend_radius": 10.0,
+      "width": 0.5,
+      "gap": 0.2,
+      "name_function": "coupler90",
+      "hash": "a62ad366ef0b3beb4d8aa36be3800275"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+}
