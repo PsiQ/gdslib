@@ -8,11 +8,13 @@
       "width": 0.5,
       "gap": 0.27,
       "layer": 1,
+      "layer_cladding": 111,
+      "cladding_offset": 3,
       "name_function": "coupler_straight",
-      "hash": "66e075c0945161eb714c80272be5b6c2"
+      "hash": "93cd5aed9ea5c0b3724a997fe5061203"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "32232dd81e84e56f332a9373f9c9b8e6b601bc2b"
 }
