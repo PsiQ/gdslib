@@ -7,11 +7,13 @@
       "bend_radius": 10.0,
       "width": 0.5,
       "gap": 0.2,
+      "waveguide_factory": "waveguide",
+      "bend90_factory": "bend_circular",
       "name_function": "coupler90",
-      "hash": "a62ad366ef0b3beb4d8aa36be3800275"
+      "hash": "cc89ca724ffa7ad2c8f2bf4ecdaf22ee"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "e2911a38bd9d70b70ac3cc7540c21020908df02a"
 }
