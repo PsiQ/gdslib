@@ -7,12 +7,14 @@
       "radius": 10.0,
       "width": 0.5,
       "resolution": 150.0,
-      "layer": 1,
-      "name_function": "bend_euler180",
-      "hash": "ace0b8077284645543848e6b5ae82468"
+      "layer": [
+        1,
+        0
+      ],
+      "name_function": "bend_euler180"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

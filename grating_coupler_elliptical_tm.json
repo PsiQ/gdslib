@@ -12,16 +12,18 @@
       "grating_line_width": 0.707,
       "wg_width": 0.5,
       "neff": 1.8,
-      "layer": 1,
+      "layer": [
+        1,
+        0
+      ],
       "p_start": 26,
       "n_periods": 16,
       "big_last_tooth": "False",
-      "wavelength": 1554,
       "name_function": "grating_coupler_elliptical_tm",
-      "hash": "4ef3ef6f8408d50f7da1780cf379b3ff"
+      "wavelength": 1554
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

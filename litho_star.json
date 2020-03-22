@@ -8,11 +8,10 @@
       "line_width": 2,
       "diameter": 200,
       "layer": 0,
-      "name_function": "litho_star",
-      "hash": "7a585e54030dd023d183c768a240b158"
+      "name_function": "litho_star"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

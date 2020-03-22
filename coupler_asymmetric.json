@@ -8,11 +8,10 @@
       "waveguide": "waveguide",
       "gap": 0.234,
       "wg_width": 0.5,
-      "name_function": "coupler_asymmetric",
-      "hash": "100e8040de28d0bb10fafc70afa0627b"
+      "name_function": "coupler_asymmetric"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

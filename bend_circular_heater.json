@@ -6,12 +6,11 @@
       "class": "bend_circular_heater",
       "radius": 10.0,
       "wg_width": 0.5,
-      "width": 0.5,
       "name_function": "bend_circular_heater",
-      "hash": "d526b33e4d4ae3ee2a430d50dccc84fc"
+      "width": 0.5
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

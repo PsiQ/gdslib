@@ -4,7 +4,7 @@
     "grating_coupler_tree": {
       "name": "grating_coupler_tree",
       "class": "grating_coupler_tree",
-      "settings": "name_hash",
+      "settings": "name",
       "n_waveguides": 4,
       "waveguide_spacing": 4,
       "waveguide_function": "waveguide",
@@ -14,13 +14,15 @@
       "route_filter": "connect_strip_way_points_no_taper",
       "bend_factory": "bend_circular",
       "bend_radius": 10.0,
-      "layer_label": "None",
+      "layer_label": [
+        201,
+        0
+      ],
       "kwargs": "_empty",
-      "name_function": "grating_coupler_tree",
-      "hash": "096332550ae9156cc25eedd4692ec492"
+      "name_function": "grating_coupler_tree"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

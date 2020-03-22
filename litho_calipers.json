@@ -11,11 +11,10 @@
       "row_spacing": 0,
       "layer_top": 1,
       "layer_bottom": 2,
-      "name_function": "litho_calipers",
-      "hash": "94960c0a0ae871896bc685ff1f5e99f6"
+      "name_function": "litho_calipers"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

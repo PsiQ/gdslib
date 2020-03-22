@@ -6,14 +6,16 @@
       "class": "waveguide",
       "length": 10,
       "width": 0.5,
-      "layer": 1,
-      "layer_cladding": 111,
+      "layer": [
+        1,
+        0
+      ],
+      "layers_cladding": "(111, 0)",
       "cladding_offset": 3,
-      "name_function": "waveguide",
-      "hash": "799f151b792f7a9d91b2ee8dff5f2979"
+      "name_function": "waveguide"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

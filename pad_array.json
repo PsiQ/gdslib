@@ -5,15 +5,20 @@
       "name": "pad_array",
       "class": "pad_array",
       "pad": "pad",
-      "start": "0_0",
-      "spacing": "150_0",
+      "start": [
+        0,
+        0
+      ],
+      "spacing": [
+        150,
+        0
+      ],
       "n": 6,
       "port_list": "N",
-      "name_function": "pad_array",
-      "hash": "e4cb7880605e79bbb8eec829f4547e64"
+      "name_function": "pad_array"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "343f49fd016a048ff16c14176ef9e0da3ee2be74"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

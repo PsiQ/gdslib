@@ -10,12 +10,16 @@
       "length_mmi": 5.496,
       "width_mmi": 2.5,
       "gap_mmi": 0.25,
-      "layer": 1,
-      "name_function": "mmi1x2",
-      "hash": "7f6ecdc626346b973fa33b177ef1b4da"
+      "layer": [
+        1,
+        0
+      ],
+      "layers_cladding": "",
+      "cladding_offset": 3,
+      "name_function": "mmi1x2"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

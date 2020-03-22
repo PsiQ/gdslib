@@ -6,11 +6,10 @@
       "class": "loop_mirror",
       "component": "mmi1x2",
       "bend90": "bend_euler90",
-      "name_function": "loop_mirror",
-      "hash": "e5251c2aa00faacd54ccd12ab214b46b"
+      "name_function": "loop_mirror"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

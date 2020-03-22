@@ -12,13 +12,12 @@
       "straight_heater_factory": "wg_heater_connected",
       "straight_factory": "waveguide",
       "coupler_factory": "mmi1x2",
-      "with_elec_connections": "True",
-      "netlist": "{'name': 'CP1', 'rank': 0, 'ports': ['E0', 'E1', 'W0'], 'settings': {'wg_width': 0p5, 'width_taper': 1p0, 'length_taper': 10, 'length_mmi': 5p496, 'width_mmi': 2p5, 'gap_mmi': 0p25, 'layer': 1}}_{'name': 'CP2', 'rank': 0, 'ports': ['E0', 'E1', 'W0'], 'settings': {'wg_width': 0p5, 'width_taper': 1p0, 'length_taper': 10, 'length_mmi': 5p496, 'width_mmi': 2p5, 'gap_mmi': 0p25, 'layer': 1}}_{'name': 'arm_top', 'rank': 0, 'ports': ['W0', 'E0', 'E_0', 'E_1', 'E_2', 'E_3'], 'settings': {'L0': 0p1, 'L1': 0, 'L_top': 10, 'bend_radius': 10p0, 'bend90_factory': <function bend_circular at 0x7f0a54001c20>, 'straight_heater_factory': <function wg_heater_connected at 0x7f0a5405ecb0>, 'straight_factory': <function waveguide at 0x7f0a53fc1b90>, 'with_elec_connections': True}}_{'name': 'arm_bot', 'rank': 0, 'ports': ['W0', 'E0', 'E_0', 'E_1', 'E_2', 'E_3'], 'settings': {'L0': 9p1, 'L1': 0, 'L_top': 10, 'bend_radius': 10p0, 'bend90_factory': <function bend_circular at 0x7f0a54001c20>, 'straight_heater_factory': <function wg_heater_connected at 0x7f0a5405ecb0>, 'straight_factory': <function waveguide at 0x7f0a53fc1b90>, 'with_elec_connections': True}}_{'name': 'component_name', 'rank': 1, 'type': 'COMPOUND', 'settings': {}, 'connections': ['CP1, E0, arm_bot, W0', 'arm_bot, E0, CP2, E0', 'CP1, E1, arm_top, W0', 'arm_top, E0, CP2, E0'], 'ports': {'W0': 'CP1, W0', 'E0': 'CP2, W0', 'E_TOP_0': 'arm_top, E_0', 'E_TOP_1': 'arm_top, E_1', 'E_TOP_2': 'arm_top, E_2', 'E_TOP_3': 'arm_top, E_3', 'E_BOT_0': 'arm_bot, E_0', 'E_BOT_1': 'arm_bot, E_1', 'E_BOT_2': 'arm_bot, E_2', 'E_BOT_3': 'arm_bot, E_3'}}",
-      "name_function": "mzi1x2",
-      "hash": "25d58060e6910a928793c428aac44e5b"
+      "with_elec_connections": "False",
+      "netlist": "{'name': 'CP1', 'rank': 0, 'ports': ['E0', 'E1', 'W0'], 'settings': {'wg_width': 0p5, 'width_taper': 1p0, 'length_taper': 10, 'length_mmi': 5p496, 'width_mmi': 2p5, 'gap_mmi': 0p25, 'layer': (1, 0), 'layers_cladding': [], 'cladding_offset': 3}}_{'name': 'CP2', 'rank': 0, 'ports': ['E0', 'E1', 'W0'], 'settings': {'wg_width': 0p5, 'width_taper': 1p0, 'length_taper': 10, 'length_mmi': 5p496, 'width_mmi': 2p5, 'gap_mmi': 0p25, 'layer': (1, 0), 'layers_cladding': [], 'cladding_offset': 3}}_{'name': 'arm_top', 'rank': 0, 'ports': ['W0', 'E0'], 'settings': {'L0': 0p1, 'L1': 0, 'L_top': 10, 'bend_radius': 10p0, 'bend90_factory': <function bend_circular at 0x11851f680>, 'straight_heater_factory': <function waveguide at 0x118509830>, 'straight_factory': <function waveguide at 0x118509830>, 'with_elec_connections': False}}_{'name': 'arm_bot', 'rank': 0, 'ports': ['W0', 'E0'], 'settings': {'L0': 9p1, 'L1': 0, 'L_top': 10, 'bend_radius': 10p0, 'bend90_factory': <function bend_circular at 0x11851f680>, 'straight_heater_factory': <function waveguide at 0x118509830>, 'straight_factory': <function waveguide at 0x118509830>, 'with_elec_connections': False}}_{'name': 'component_name', 'rank': 1, 'type': 'COMPOUND', 'settings': {}, 'connections': ['CP1, E0, arm_bot, W0', 'arm_bot, E0, CP2, E0', 'CP1, E1, arm_top, W0', 'arm_top, E0, CP2, E0'], 'ports': {'W0': 'CP1, W0', 'E0': 'CP2, W0'}}",
+      "name_function": "mzi1x2"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

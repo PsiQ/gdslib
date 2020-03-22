@@ -8,11 +8,10 @@
       "width": 0.5,
       "angle_resolution": 2.5,
       "layer": 0,
-      "name_function": "ring",
-      "hash": "db3ef2f289c192784bd7ab993c5dd55c"
+      "name_function": "ring"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

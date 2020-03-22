@@ -13,14 +13,16 @@
       "trench_width": 0.5,
       "trench_keep_out": 2.0,
       "trenches": "{'nb_segments': 2, 'lane': 1, 'x_start_offset': 0}_{'nb_segments': 2, 'lane': -1, 'x_start_offset': 0}",
-      "layers_heater": "47",
+      "layers_heater": "(47, 0)",
       "waveguide_factory": "waveguide",
-      "layer_trench": 7,
-      "name_function": "waveguide_heater",
-      "hash": "8a4762740de1c05fa3736ce4310e3c00"
+      "layer_trench": [
+        7,
+        0
+      ],
+      "name_function": "waveguide_heater"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

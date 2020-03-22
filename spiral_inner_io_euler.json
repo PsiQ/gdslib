@@ -20,11 +20,10 @@
       "straight_factory": "waveguide",
       "taper": "None",
       "length": "17261.64195632832",
-      "name_function": "spiral_inner_io_euler",
-      "hash": "968ab54ea3c5c6d239173c6ebb97bc05"
+      "name_function": "spiral_inner_io_euler"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }

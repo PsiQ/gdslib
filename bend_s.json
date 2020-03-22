@@ -7,13 +7,15 @@
       "width": 0.5,
       "height": 2,
       "length": 10,
-      "layer": 1,
+      "layer": [
+        1,
+        0
+      ],
       "nb_points": 99,
-      "name_function": "bend_s",
-      "hash": "c810a323653e3feb5c57f710c3b69d6d"
+      "name_function": "bend_s"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "8f5ef62c87320423357bdea13d8660f575b35d97"
+  "git_hash": "86711bba1dfb90d4a803297a26e38312671c0f26"
 }
