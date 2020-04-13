@@ -4,26 +4,27 @@
     "spiral_inner_io_euler": {
       "name": "spiral_inner_io_euler",
       "class": "spiral_inner_io_euler",
-      "N": 7,
-      "x_straight_inner_right": 0.0,
-      "x_straight_inner_left": 160.0,
-      "y_straight_inner_top": 0.0,
-      "y_straight_inner_bottom": 0.0,
-      "grating_spacing": 127.0,
-      "dx": 3.0,
-      "dy": 3.0,
+      "N": 6,
+      "x_straight_inner_right": 150.0,
+      "x_straight_inner_left": 150.0,
+      "y_straight_inner_top": 50.0,
+      "y_straight_inner_bottom": 10,
+      "grating_spacing": 127,
+      "dx": 3,
+      "dy": 3,
       "bend90_function": "bend_euler90",
       "bend180_function": "bend_euler180",
-      "bend_radius": 40,
+      "bend_radius": 50,
       "wg_width": 0.5,
       "wg_width_grating_coupler": 0.5,
       "straight_factory": "waveguide",
       "taper": "None",
-      "length": "17261.64195632832",
+      "length": "20914.664633974484",
+      "kwargs": "_empty",
       "name_function": "spiral_inner_io_euler"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "ebe8b2bf928707f54ce565e2b01c2e8f7cfac143"
+  "git_hash": "40575b0ddfbba5a05cf065335fa71af356e7edde"
 }
