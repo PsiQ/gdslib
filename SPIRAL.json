@@ -1,0 +1,16 @@
+{
+  "json_version": 6,
+  "cells": {
+    "SPIRAL": {
+      "name": "SPIRAL",
+      "class": "SPIRAL",
+      "settings": "name_class_total_length_cutback_length_N_x_inner_length_cutback_x_inner_offset_y_straight_inner_top_inner_loop_spacing_dx_dy_bend90_function_bend180_function_bend_radius_wg_width_straight_factory_straight_factory_fall_back_no_taper_taper_kwargs_round_corner_name_function",
+      "N": 6,
+      "x": 50.0,
+      "name_function": "SPIRAL"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "bbe91eddd96e9c5f96641be67e855580c5bb4fc4"
+}

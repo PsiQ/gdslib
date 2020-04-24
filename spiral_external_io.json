@@ -1,0 +1,30 @@
+{
+  "json_version": 6,
+  "cells": {
+    "spiral_external_io": {
+      "name": "spiral_external_io",
+      "class": "spiral_external_io",
+      "total_length": "13610.831551628262",
+      "cutback_length": "None",
+      "N": 6,
+      "x_inner_length_cutback": 300.0,
+      "x_inner_offset": 0,
+      "y_straight_inner_top": 5.0,
+      "inner_loop_spacing": "None",
+      "dx": 3,
+      "dy": 3,
+      "bend90_function": "bend_circular",
+      "bend180_function": "bend_circular180",
+      "bend_radius": 50,
+      "wg_width": 0.5,
+      "straight_factory": "waveguide",
+      "straight_factory_fall_back_no_taper": "None",
+      "taper": "None",
+      "kwargs_round_corner": "_empty",
+      "name_function": "spiral_external_io"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "86d064955b9d21e39103419b58f4fe7f8b36dcb8"
+}
