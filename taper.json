@@ -8,13 +8,17 @@
       "width1": 0.5,
       "width2": "None",
       "port": "None",
-      "layer": "1_0",
+      "layer": [
+        1,
+        0
+      ],
       "layers_cladding": "",
       "cladding_offset": 3,
-      "name_function": "taper"
+      "with_pins": "True",
+      "module": "pp.components.taper"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

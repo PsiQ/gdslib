@@ -6,12 +6,12 @@
       "class": "wg_heater_connected",
       "waveguide_heater": "waveguide_heater",
       "wg_heater_connector": "wg_heater_connector",
-      "tlm_layers": "[40, 0]_[41, 0]_[44, 0]_[45, 0]_[43, 0]_[49, 0]",
+      "tlm_layers": "(40, 0)_(41, 0)_(44, 0)_(45, 0)_(43, 0)_(49, 0)",
       "kwargs": "_empty",
-      "name_function": "wg_heater_connected"
+      "module": "pp.components.waveguide_heater"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

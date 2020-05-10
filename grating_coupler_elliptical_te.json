@@ -12,15 +12,17 @@
       "grating_line_width": 0.343,
       "wg_width": 0.5,
       "neff": 2.638,
-      "layer": "1_0",
+      "layer": [
+        1,
+        0
+      ],
       "p_start": 26,
       "n_periods": 24,
       "big_last_tooth": "False",
-      "wavelength": 1554,
-      "name_function": "grating_coupler_elliptical_te"
+      "module": "pp.components.grating_coupler.elliptical"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

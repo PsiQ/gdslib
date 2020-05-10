@@ -6,10 +6,10 @@
       "class": "loop_mirror",
       "component": "mmi1x2",
       "bend90": "bend_euler90",
-      "name_function": "loop_mirror"
+      "module": "pp.components.loop_mirror"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

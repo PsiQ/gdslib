@@ -13,13 +13,16 @@
       "trench_width": 0.5,
       "trench_keep_out": 2.0,
       "trenches": "{'nb_segments': 2, 'lane': 1, 'x_start_offset': 0}_{'nb_segments': 2, 'lane': -1, 'x_start_offset': 0}",
-      "layers_heater": "[47, 0]",
+      "layers_heater": "(47, 0)",
       "waveguide_factory": "waveguide",
-      "layer_trench": "7_0",
-      "name_function": "waveguide_heater"
+      "layer_trench": [
+        7,
+        0
+      ],
+      "module": "pp.components.waveguide_heater"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

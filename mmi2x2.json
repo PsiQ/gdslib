@@ -10,11 +10,14 @@
       "length_mmi": 15.45,
       "width_mmi": 2.1,
       "gap_mmi": 0.2,
-      "layer": "1_0",
-      "name_function": "mmi2x2"
+      "layer": [
+        1,
+        0
+      ],
+      "module": "pp.components.mmi2x2"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

@@ -9,10 +9,10 @@
       "gap": 0.2,
       "waveguide_factory": "waveguide",
       "bend90_factory": "bend_circular",
-      "name_function": "coupler90"
+      "module": "pp.components.coupler90"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

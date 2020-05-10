@@ -10,6 +10,7 @@
       "component_name": "None",
       "taper_factory": "taper",
       "get_route_factory": "route_fiber_array",
+      "get_input_labels_function": "get_input_labels",
       "kwargs": "_empty",
       "n_waveguides": 4,
       "waveguide_spacing": 4,
@@ -19,11 +20,14 @@
       "route_filter": "connect_strip_way_points_no_taper",
       "bend_factory": "bend_circular",
       "bend_radius": 10.0,
-      "layer_label": "201_0",
-      "name_function": "grating_coupler_tree"
+      "layer_label": [
+        201,
+        0
+      ],
+      "module": "pp.components.grating_coupler.grating_coupler_tree"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

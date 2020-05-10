@@ -9,13 +9,17 @@
       "theta": -90,
       "start_angle": 0,
       "angle_resolution": 2.5,
-      "layer": "1_0",
-      "layers_cladding": "[111, 0]",
+      "layer": [
+        1,
+        0
+      ],
+      "layers_cladding": "(111, 0)",
       "cladding_offset": 3,
-      "name_function": "bend_circular"
+      "with_pins": "True",
+      "module": "pp.components.bend_circular"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }
