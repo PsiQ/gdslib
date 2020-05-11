@@ -11,10 +11,18 @@
       "length_taper": 150,
       "width": 0.5,
       "partial_etch": "False",
-      "name_function": "grating_coupler_uniform"
+      "layer": [
+        1,
+        0
+      ],
+      "layer_partial_etch": [
+        2,
+        0
+      ],
+      "module": "pp.components.grating_coupler.uniform"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "ebe8b2bf928707f54ce565e2b01c2e8f7cfac143"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

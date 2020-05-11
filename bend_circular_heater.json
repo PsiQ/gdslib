@@ -7,10 +7,10 @@
       "radius": 10.0,
       "wg_width": 0.5,
       "width": 0.5,
-      "name_function": "bend_circular_heater"
+      "module": "pp.components.bend_circular_heater"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "ebe8b2bf928707f54ce565e2b01c2e8f7cfac143"
+  "git_hash": "2a904918096616bd0f4920e5b229ce80d2c85900"
 }

@@ -1,9 +1,9 @@
 {
   "json_version": 6,
   "cells": {
-    "spiral_inner_io_euler": {
-      "name": "spiral_inner_io_euler",
-      "class": "spiral_inner_io_euler",
+    "spiral_inner_io": {
+      "name": "spiral_inner_io",
+      "class": "spiral_inner_io",
       "N": 6,
       "x_straight_inner_right": 150.0,
       "x_straight_inner_left": 150.0,
@@ -12,15 +12,14 @@
       "grating_spacing": 127,
       "dx": 3,
       "dy": 3,
-      "bend90_function": "bend_euler90",
-      "bend180_function": "bend_euler180",
+      "bend90_function": "bend_circular",
+      "bend180_function": "bend_circular180",
       "bend_radius": 50,
       "wg_width": 0.5,
       "wg_width_grating_coupler": 0.5,
       "straight_factory": "waveguide",
       "taper": "None",
-      "length": "20914.664633974484",
-      "kwargs": "_empty",
+      "length": "16949.99081698724",
       "module": "pp.components.spiral_inner_io"
     }
   },

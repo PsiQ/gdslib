@@ -7,10 +7,10 @@
       "bend": "bend_s",
       "gap": 0.234,
       "wg_width": 0.5,
-      "name_function": "coupler_symmetric"
+      "module": "pp.components.coupler_symmetric"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "ebe8b2bf928707f54ce565e2b01c2e8f7cfac143"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

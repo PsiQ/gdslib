@@ -16,10 +16,10 @@
       ],
       "layers_cladding": "",
       "cladding_offset": 3,
-      "name_function": "mmi1x2"
+      "module": "pp.components.mmi1x2"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "ebe8b2bf928707f54ce565e2b01c2e8f7cfac143"
+  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
 }

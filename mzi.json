@@ -1,19 +1,18 @@
 {
   "json_version": 6,
   "cells": {
-    "mzi1x2": {
-      "name": "mzi1x2",
-      "class": "mzi1x2",
-      "L0": 0.1,
+    "mzi": {
+      "name": "mzi",
+      "class": "mzi",
+      "L0": 1,
       "L1": 9,
       "L2": 10,
       "bend_radius": 10.0,
       "bend90_factory": "bend_circular",
-      "straight_heater_factory": "wg_heater_connected",
       "straight_factory": "waveguide",
       "coupler_factory": "mmi1x2",
-      "with_elec_connections": "False",
-      "module": "pp.components.mzi1x2"
+      "combiner_factory": "None",
+      "module": "pp.components.mzi"
     }
   },
   "test_protocol": {},
