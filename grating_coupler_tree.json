@@ -4,7 +4,7 @@
     "grating_coupler_tree": {
       "name": "grating_coupler_tree",
       "class": "grating_coupler_tree",
-      "component": "",
+      "component": {},
       "grating_coupler": "grating_coupler_te",
       "gc_port_name": "W0",
       "component_name": "None",
@@ -29,5 +29,5 @@
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
+  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
 }

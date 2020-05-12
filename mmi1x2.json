@@ -14,12 +14,15 @@
         1,
         0
       ],
-      "layers_cladding": "",
+      "layers_cladding": [],
       "cladding_offset": 3,
+      "simulation_settings": {
+        "port_width": 1.5e-06
+      },
       "module": "pp.components.mmi1x2"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
+  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
 }
