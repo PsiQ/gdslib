@@ -1,2 +1,4 @@
 *.fsp
 *.log
+.ipynb_checkpoints/
+*.ipynb
