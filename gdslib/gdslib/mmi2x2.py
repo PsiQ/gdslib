@@ -1,5 +1,5 @@
 import pp
-from gdslib import load
+from gdslib.load import load
 
 
 def mmi2x2(c=pp.c.mmi2x2, **kwargs):

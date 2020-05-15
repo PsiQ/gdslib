@@ -1,5 +1,5 @@
 import pp
-from gdslib import load
+from gdslib.load import load
 
 
 def coupler_ring(c=pp.c.coupler_ring, **kwargs):

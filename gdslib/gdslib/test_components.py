@@ -1,6 +1,7 @@
 # this code has been automatically generated from write_tests.py
-import gdslib as cl
 import numpy as np
+
+import gdslib as cl
 
 
 def test_mmi1x2(data_regression):
@@ -10,11 +11,7 @@ def test_mmi1x2(data_regression):
     f = 3e8 / wav
     s = c.s_parameters(freq=f)
     _, rows, cols = np.shape(s)
-    sdict = {
-        f"S{i+1}{j+1}": np.abs(s[:, i, j]).tolist()
-        for i in range(rows)
-        for j in range(cols)
-    }
+    sdict = {f'S{i+1}{j+1}': np.abs(s[:, i, j]).tolist() for i in range(rows) for j in range(cols)}
     data_regression.check(sdict)
 
 
@@ -25,9 +22,6 @@ def test_coupler_ring(data_regression):
     f = 3e8 / wav
     s = c.s_parameters(freq=f)
     _, rows, cols = np.shape(s)
-    sdict = {
-        f"S{i+1}{j+1}": np.abs(s[:, i, j]).tolist()
-        for i in range(rows)
-        for j in range(cols)
-    }
+    sdict = {f'S{i+1}{j+1}': np.abs(s[:, i, j]).tolist() for i in range(rows) for j in range(cols)}
     data_regression.check(sdict)
+
