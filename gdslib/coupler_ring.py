@@ -3,6 +3,17 @@ from gdslib.load import load
 
 
 def coupler_ring(c=pp.c.coupler_ring, **kwargs):
+    """ coupler for half a ring
+
+    .. code::
+
+           N0            N1
+           |             |
+            \           /
+             \         /
+           ---=========---
+        W0    length_x    E0
+    """
     m = load(c, **kwargs)
     return m
 

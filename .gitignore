@@ -1,7 +1,6 @@
 *.fsp
 *.log
 .ipynb_checkpoints/
-*.ipynb
 *.py[cod]
 
 # C extensions
@@ -12,10 +11,6 @@
 *.egg
 *.egg-info
 dist
-doc_pdks/
-pdk_docs/
-build
-gdslib/
 eggs
 parts
 bin
@@ -28,9 +23,6 @@ lib64
 __pycache__
 .mypy_cache/
 .pyre/
-extra/
-pp/components/doc
-cml/
 
 # Installer logs
 pip-log.txt
@@ -135,7 +127,6 @@ Icon?
 *.lms
 *.wpr
 *.wpu
-.pytest_cache
 
 # Fab-specific
 *.gds

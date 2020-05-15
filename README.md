@@ -1,17 +1,17 @@
 # gdslib
 
-gdslibrary
+gds and Sparameters library
 
 ## Usage
 
+See notebooks
+
+
+## Tests
+
+pytest runs regression tests over the Sparameters for components and circuits
+
+
 ## Installation
 
-## Requirements
-
-## Compatibility
-
-## Licence
-
-## Authors
-
-`gdslib` was written by `Joaquin <j>`_.
+`make install`

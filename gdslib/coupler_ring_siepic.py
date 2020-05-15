@@ -1,3 +1,14 @@
+"""
+           n2            n4
+           |             |
+            \           /
+             \         /
+           ---=========---
+        n1    length_x    n3
+
+"""
+
+
 from gdslib import plot_sparameters
 from simphony.library import siepic
 
