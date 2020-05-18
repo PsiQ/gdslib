@@ -1,1 +1,0 @@
-{"layer2nm": ["1_0_220"], "layer2material": ["1_0_Si (Silicon) - Palik", "111_0_SiO2 (Glass) - Palik", "34_0_Si3N4 (Silicon Nitride) - Phillip"], "remove_layers": [[111, 0]], "background_material": "SiO2 (Glass) - Palik", "port_width": 1.5e-06, "port_height": 1.5e-06, "port_extension_um": 1, "mesh_accuracy": 2, "zmargin": 1e-06, "ymargin": 2e-06}
