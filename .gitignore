@@ -105,7 +105,6 @@ Icon?
 *.icp
 *.ldf
 *.bak
-*.dat
 *.mat
 
 *.xml
