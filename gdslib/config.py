@@ -35,6 +35,7 @@ CONFIG = hiyapyco.load(
 )
 CONFIG["module_path"] = module_path
 CONFIG["repo_path"] = repo_path
+CONFIG["sp"] = repo_path / "sp"
 
 
 if __name__ == "__main__":

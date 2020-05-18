@@ -3,6 +3,8 @@ import pp
 from simphony.elements import Model
 from simphony.tools import interpolate
 
+from gdslib.config import CONFIG
+
 
 def load(component, **kwargs):
     """ load Sparameters for a component
@@ -12,7 +14,7 @@ def load(component, **kwargs):
         **kwargs
     """
     component = pp.call_if_func(component, **kwargs)
-    pins, f, s = pp.sp.load(component)
+    pins, f, s = pp.sp.load(component, dirpath=CONFIG["sp"])
 
     def interpolate_sp(freq):
         return interpolate(freq, f, s)
