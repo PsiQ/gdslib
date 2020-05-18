@@ -39,4 +39,4 @@ CONFIG["sp"] = repo_path / "sp"
 
 
 if __name__ == "__main__":
-    print(CONFIG["repo_path"])
+    print(CONFIG["sp"])

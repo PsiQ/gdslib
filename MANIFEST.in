@@ -1,0 +1,3 @@
+include sp/*.json
+include sp/*.dat
+include sp/*.settings
