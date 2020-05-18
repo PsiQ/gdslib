@@ -1,4 +1,4 @@
 hiyapyco
-gdsfactory
+git+git://github.com/gdsfactory/gdsfactory
 git+git://github.com/BYUCamachoLab/simphony
 pytest-regressions
