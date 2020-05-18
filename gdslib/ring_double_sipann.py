@@ -1,3 +1,4 @@
+import numpy as np
 import pp
 from simphony.library import ebeam
 from simphony.library import siepic
@@ -7,7 +8,7 @@ from gdslib import sweep_simulation
 
 
 @pp.autoname
-def ring_double_siepic(
+def ring_double_sipann(
     wg_width=0.5,
     gap=0.2,
     length_x=4,
@@ -48,30 +49,35 @@ def ring_double_siepic(
     """
 
     waveguide = pp.call_if_func(waveguide)
-    coupler = pp.call_if_func(coupler)
+    half_ring = pp.call_if_func(coupler)
+    term = pp.call_if_func(coupler)
 
-    # Create the circuit, add all individual instances
-    circuit = Subcircuit("mzi")
-    circuit.add(
-        [(coupler, "ct"), (coupler, "cb"), (waveguide, "wl"), (waveguide, "wr")]
-    )
+    circuit = Subcircuit()
+    circuit.add([(half_ring, "input"), (half_ring, "output"), (term, "terminator")])
 
-    # Circuits can be connected using the elements' string names:
+    circuit.elements["input"].pins = ("pass", "midb", "in", "midt")
+    circuit.elements["output"].pins = ("out", "midt", "term", "midb")
+
     circuit.connect_many(
         [
-            ("cb", "2", "wl", "n1"),
-            ("wl", "n2", "ct", "n4"),
-            ("ct", "2", "wr", "n2"),
-            ("wr", "n1", "cb", "n4"),
+            ("input", "midb", "output", "midb"),
+            ("input", "midt", "output", "midt"),
+            ("terminator", "n1", "output", "term"),
         ]
     )
-    circuit.elements["cb"].pins["n4"] = "input"
-    circuit.elements["cb"].pins["n3"] = "output"
-    circuit.elements["ct"].pins["n3"] = "drop"
-    circuit.elements["ct"].pins["n4"] = "cdrop"
     return circuit
 
 
 if __name__ == "__main__":
-    c = ring_double_siepic()
+    from SiPANN import scee
+    from SiPANN.scee_int import SimphonyWrapper
+
+    r = 10e3
+    w = 500
+    t = 220
+    wavelength = np.linspace(1500, 1600)
+    gap = 100
+    hr = scee.HalfRing(w, t, r, gap)
+    s_hr = SimphonyWrapper(hr)
+    c = ring_double_sipann(coupler=s_hr)
     sweep_simulation(c)

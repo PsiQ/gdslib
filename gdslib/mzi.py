@@ -1,12 +1,13 @@
 import pp
-from gdslib import sweep_simulation
-from gdslib.mmi1x2 import mmi1x2
 from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
+from gdslib import sweep_simulation
+from gdslib.mmi1x2 import mmi1x2
+
 
 @pp.autoname
-def mzi(L0=1, L1=100, L2=10, y_model_factory=mmi1x2):
+def mzi(L0=1, L1=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral_1550):
     """ Mzi
 
     Args:
@@ -55,8 +56,8 @@ def mzi(L0=1, L1=100, L2=10, y_model_factory=mmi1x2):
 
     """
     y = pp.call_if_func(y_model_factory)
-    wg_long = siepic.ebeam_wg_integral_1550(length=(2 * L0 + 2 * L1 + L2) * 1e-6)
-    wg_short = siepic.ebeam_wg_integral_1550(length=(2 * L0 + L2) * 1e-6)
+    wg_long = wg(length=(2 * L0 + 2 * L1 + L2) * 1e-6)
+    wg_short = wg(length=(2 * L0 + L2) * 1e-6)
 
     # Create the circuit, add all individual instances
     circuit = Subcircuit("mzi")

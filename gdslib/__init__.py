@@ -1,18 +1,13 @@
+""" This package contains parameterized circuit models for https://github.com/gdsfactory/gdsfactory components
 """
-simphony.library.gdsfactory
-==============================
-
-This package contains parameterized circuit models for https://github.com/gdsfactory/gdsfactory components
-
-"""
-
 from gdslib.add_gc import add_gc
 from gdslib.coupler_ring import coupler_ring
 from gdslib.load import load
 from gdslib.mmi1x2 import mmi1x2
 from gdslib.mzi import mzi
 from gdslib.plot_sparameters import plot_sparameters
-from gdslib.sweep_simulation import get_transmission, sweep_simulation
+from gdslib.sweep_simulation import get_transmission
+from gdslib.sweep_simulation import sweep_simulation
 from gdslib.sweep_simulation_montecarlo import sweep_simulation_montecarlo
 
 __all__ = [
