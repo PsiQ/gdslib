@@ -1,3 +1,6 @@
 include sp/*.json
 include sp/*.dat
 include sp/*.settings
+include requirements.txt
+include README.md
+include LICENSE
