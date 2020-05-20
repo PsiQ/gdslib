@@ -59,16 +59,16 @@ def ring_double(
     # Circuits can be connected using the elements' string names:
     circuit.connect_many(
         [
-            ("cb", "N0", "wl", "n1"),
-            ("wl", "n2", "ct", "N1"),
-            ("ct", "N0", "wr", "n2"),
-            ("wr", "n1", "cb", "N1"),
+            ("cb", "n1", "wl", "n1"),
+            ("wl", "n2", "ct", "n2"),
+            ("ct", "n4", "wr", "n1"),
+            ("wr", "n2", "cb", "n3"),
         ]
     )
-    circuit.elements["cb"].pins["W0"] = "input"
-    circuit.elements["cb"].pins["E0"] = "output"
-    circuit.elements["ct"].pins["W0"] = "drop"
-    circuit.elements["ct"].pins["E0"] = "cdrop"
+    circuit.elements["cb"].pins["n2"] = "input"
+    circuit.elements["cb"].pins["n4"] = "output"
+    circuit.elements["ct"].pins["n1"] = "drop"
+    circuit.elements["ct"].pins["n3"] = "cdrop"
     return circuit
 
 

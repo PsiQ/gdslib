@@ -1,5 +1,4 @@
 import pp
-from simphony.library import ebeam
 from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
@@ -15,7 +14,7 @@ def ring_double_siepic(
     length_y=2,
     coupler=siepic.ebeam_dc_halfring_straight,
     waveguide=siepic.ebeam_wg_integral_1550,
-    terminator=ebeam.ebeam_terminator_te1550,
+    terminator=siepic.ebeam_terminator_te1550,
 ):
     """ double bus ring made of two couplers (ct: top, cb: bottom)
     connected with two vertical waveguides (wyl: left, wyr: right)
@@ -59,16 +58,16 @@ def ring_double_siepic(
     # Circuits can be connected using the elements' string names:
     circuit.connect_many(
         [
-            ("cb", "2", "wl", "n1"),
-            ("wl", "n2", "ct", "n4"),
-            ("ct", "2", "wr", "n2"),
-            ("wr", "n1", "cb", "n4"),
+            ("cb", "n1", "wl", "n1"),
+            ("wl", "n2", "ct", "n2"),
+            ("ct", "n4", "wr", "n1"),
+            ("wr", "n2", "cb", "n3"),
         ]
     )
-    circuit.elements["cb"].pins["n4"] = "input"
-    circuit.elements["cb"].pins["n3"] = "output"
-    circuit.elements["ct"].pins["n3"] = "drop"
-    circuit.elements["ct"].pins["n4"] = "cdrop"
+    circuit.elements["cb"].pins["n2"] = "input"
+    circuit.elements["cb"].pins["n4"] = "output"
+    circuit.elements["ct"].pins["n1"] = "drop"
+    circuit.elements["ct"].pins["n3"] = "cdrop"
     return circuit
 
 
