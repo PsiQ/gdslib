@@ -6,15 +6,18 @@ from simphony.tools import interpolate
 from gdslib.config import CONFIG
 
 
-def load(component, **kwargs):
+def load(component=None, filepath=None, numports=None, **kwargs):
     """ load Sparameters for a component
 
     Args:
         component: component factory or instance
         **kwargs
     """
-    component = pp.call_if_func(component, **kwargs)
-    pins, f, s = pp.sp.load(component, dirpath=CONFIG["sp"])
+    if filepath is None:
+        component = pp.call_if_func(component, **kwargs)
+    pins, f, s = pp.sp.load(
+        component, filepath=filepath, dirpath=CONFIG["sp"], numports=numports
+    )
 
     def interpolate_sp(freq):
         return interpolate(freq, f, s)

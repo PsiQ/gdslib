@@ -29,6 +29,18 @@ def ring_double_siepic(
 
           length_x
 
+
+     drop   n1 _        _ n3 cdrop
+                \______/
+                 ______
+     in     n2 _/      \_n4
+               |        |
+            n1 |        | n3
+                \______/
+                 ______
+     in     n2 _/      \_n4 output
+
+
     .. plot::
       :include-source:
 
