@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.constants import speed_of_light
 
 
 def get_sparameters(c, wavelengths=None):
@@ -12,6 +13,11 @@ def get_sparameters(c, wavelengths=None):
 def plot_sparameters(c, wavelengths=None, pins=None):
     """ plots sparameters from a model
 
+    Args:
+        c: circuit model
+        wavelengths: wavelengths (m)
+        pins: list of pins to plot
+
     .. plot::
         :include-source:
 
@@ -21,9 +27,11 @@ def plot_sparameters(c, wavelengths=None, pins=None):
         coupler = siepic.ebeam_dc_halfring_straight()
         plot_sparameters(coupler)
     """
+    if callable(c):
+        c = c()
     if wavelengths is None:
-        wavelengths = np.linspace(1520, 1570, 1024) * 1e-9
-    f = 3e8 / wavelengths
+        wavelengths = c.wavelengths
+    f = speed_of_light / wavelengths
     s = c.s_parameters(freq=f)
 
     pins = pins or c.pins
@@ -43,10 +51,10 @@ def plot_sparameters(c, wavelengths=None, pins=None):
 if __name__ == "__main__":
     from simphony.library import siepic
 
+    wavelengths = np.linspace(1520, 1570, 1024) * 1e-9
     coupler = siepic.ebeam_dc_halfring_straight(
         gap=200e-9, radius=10e-6, width=500e-9, thickness=220e-9, couple_length=0.0
     )
-    wavelengths = np.linspace(1510, 1600, 1024) * 1e-9
-    plot_sparameters(coupler, wavelengths=wavelengths)
+    plot_sparameters(coupler, wavelengths)
     plt.legend()
     plt.show()
