@@ -6,15 +6,18 @@ from gdslib.load import load
 from gdslib.mmi1x2 import mmi1x2
 from gdslib.mzi import mzi
 from gdslib.plot_sparameters import plot_sparameters
+from gdslib.ring_double import ring_double
 from gdslib.sweep_simulation import get_transmission
 from gdslib.sweep_simulation import sweep_simulation
 from gdslib.sweep_simulation_montecarlo import sweep_simulation_montecarlo
+
 
 __all__ = [
     "load",
     "coupler_ring",
     "mmi1x2",
     "mzi",
+    "ring_double",
     "add_gc",
     "plot_sparameters",
     "sweep_simulation",

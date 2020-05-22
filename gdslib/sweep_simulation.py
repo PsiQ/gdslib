@@ -41,17 +41,24 @@ def sweep_simulation(
 
     f, s = result.data(iport, oport)
     w = freq2wl(f) * 1e9
+
     if logscale:
         s = 20 * np.log10(abs(s))
-    plt.plot(w, s)
+        ylabel = "|S| (dB)"
+    else:
+        ylabel = "|S|"
+
+    f, ax = plt.subplots()
+    ax.plot(w, s)
+    plt.xlabel("wavelength (nm)")
+    plt.ylabel(ylabel)
     plt.title(circuit.name)
-    plt.tight_layout()
-    plt.show()
+    return ax
 
 
 if __name__ == "__main__":
-    from add_gc import mzi
+    from mzi import mzi
 
     c = mzi()
     print(c.name)
-    sweep_simulation(mzi)
+    sweep_simulation(mzi, logscale=False)

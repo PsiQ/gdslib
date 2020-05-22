@@ -8,12 +8,12 @@ from gdslib.mmi1x2 import mmi1x2
 
 @pp.autoname
 def mzi(L0=1, L1=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral_1550):
-    """ Mzi
+    """ Mzi circuit model
 
     Args:
-        L0: vertical length for both and top arms
-        L1: bottom arm extra length, delta_length = 2*L1
-        L2: L_top horizontal length
+        L0 (um): vertical length for both and top arms
+        L1 (um): bottom arm extra length, delta_length = 2*L1
+        L2 (um): L_top horizontal length
 
     .. code::
 
@@ -42,17 +42,11 @@ def mzi(L0=1, L1=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral
     .. plot::
         :include-source:
 
-        import simphony.library.gdsfactory as cl
-        c = cl.mzi()
+        import gdslib as gl
 
-        simulation = SweepSimulation(circuit, 1500e-9, 1600e-9)
-        result = simulation.simulate()
+        c = gl.mzi()
+        gl.sweep_simulation(c)
 
-        f, s = result.data("input", "output")
-        plt.plot(f, s)
-        plt.title("MZI")
-        plt.tight_layout()
-        plt.show()
 
     """
     y = pp.call_if_func(y_model_factory)
@@ -85,5 +79,8 @@ def mzi(L0=1, L1=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral
 
 
 if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+
     c = mzi()
     sweep_simulation(c)
+    plt.show()

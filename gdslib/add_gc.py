@@ -1,11 +1,39 @@
 import pp
-from gdslib import sweep_simulation
-from gdslib.mzi import mzi
 from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
+from gdslib.gc import gc1550te
 
-def add_gc(circuit, gc=siepic.ebeam_gc_te1550):
+
+def add_gc(circuit, gc=gc1550te, cpi="input", cpo="output", gpi="port 1", gpo="port 2"):
+    """ add input and output gratings
+
+    Args:
+        circuit: needs to have `input` and `output` pins
+        gc: grating coupler
+        cpi: circuit pin input name
+        cpo: circuit pin output name
+        gpi: grating pin input name
+        gpo: grating pin output name
+
+    .. code::
+                    _______
+                   |       |
+        gpi-> gpo--|cpi cpo|--gpo <-gpi
+                   |_______|
+    """
+    c = Subcircuit(f"{circuit.name}_gc")
+    gc = pp.call_if_func(gc)
+    c.add([(gc, "gci"), (gc, "gco"), (circuit, "circuit")])
+    c.connect_many([("gci", gpo, "circuit", cpi), ("gco", gpo, "circuit", cpo)])
+
+    c.elements["gci"].pins[gpi] = "input"
+    c.elements["gco"].pins[gpi] = "output"
+
+    return c
+
+
+def add_gc_siepic(circuit, gc=siepic.ebeam_gc_te1550):
     """ add input and output gratings
 
     Args:
@@ -28,6 +56,9 @@ def add_gc(circuit, gc=siepic.ebeam_gc_te1550):
 
 
 if __name__ == "__main__":
+    from gdslib import sweep_simulation
+    from gdslib.mzi import mzi
+
     c1 = mzi()
     c2 = add_gc(c1)
     sweep_simulation(c2)

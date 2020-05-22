@@ -1,9 +1,16 @@
 import pp
+
 from gdslib.load import load
 
 
 def coupler_ring(c=pp.c.coupler_ring, **kwargs):
     """ coupler for half a ring
+
+    Args:
+        wg_width:0.5
+        gap: 0.2
+        length_x: 4
+        bend_radius: 5
 
     .. code::
 
@@ -13,6 +20,15 @@ def coupler_ring(c=pp.c.coupler_ring, **kwargs):
              \         /
            ---=========---
         W0    length_x    E0
+
+    .. plot::
+        :include-source:
+
+        import gdslib as gl
+
+        c = gl.coupler_ring()
+        gl.plot_sparameters(c)
+
     """
     m = load(c, **kwargs)
     return m

@@ -5,27 +5,31 @@ from scipy.constants import speed_of_light
 
 def get_sparameters(c, wavelengths=None):
     if wavelengths is None:
-        wavelengths = np.linspace(1520, 1570, 1024) * 1e-9
-    f = 3e8 / wavelengths
+        wavelengths = c.wavelengths
+    f = speed_of_light / wavelengths
     return c.s_parameters(freq=f)
 
 
-def plot_sparameters(c, wavelengths=None, pins=None):
-    """ plots sparameters from a model
+def magnitude_square_per_cent(x):
+    return 100 * np.abs(x ** 2)
 
-    Args:
-        c: circuit model
-        wavelengths: wavelengths (m)
-        pins: list of pins to plot
+
+def logscale(x):
+    return 20 * np.log10(np.abs(x))
+
+
+def plot_sparameters(
+    c, wavelengths=None, pins=None, label=None, function=magnitude_square_per_cent
+):
+    """ plots sparameters from a model
 
     .. plot::
         :include-source:
 
-        from simphony.library import siepic
-        from simphony.library.gdsfactory import plot_sparameters
+        import gdslib as gl
 
-        coupler = siepic.ebeam_dc_halfring_straight()
-        plot_sparameters(coupler)
+        c = gl.mmi1x2()
+        gl.plot_sparameters(c)
     """
     if callable(c):
         c = c()
@@ -43,9 +47,12 @@ def plot_sparameters(c, wavelengths=None, pins=None):
 
     for i, pin in enumerate(c.pins):
         if pin in pins:
-            plt.plot(wavelengths * 1e9, 100 * np.abs(s[:, i, 0] ** 2), label=pin)
+            plt.plot(wavelengths * 1e9, function(s[:, i, 0]), label=label or pin)
     plt.xlabel("wavelength (nm)")
-    plt.ylabel("Transmission (%)")
+    if function == magnitude_square_per_cent:
+        plt.ylabel("S (%)")
+    elif function == logscale:
+        plt.ylabel("S (dB)")
 
 
 if __name__ == "__main__":

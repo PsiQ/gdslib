@@ -1,8 +1,25 @@
 import pp
+
 from gdslib.load import load
 
 
 def mmi1x2(c=pp.c.mmi1x2):
+    """ mmi1x2 Sparameter model
+
+    .. code::
+                 ____
+                |   |_ E1
+        W0 -----|   |_ E0
+                |___|
+
+    .. plot::
+        :include-source:
+
+        import gdslib as gl
+
+        c = gl.mmi1x2()
+        gl.plot_sparameters(c)
+    """
     m = load(c)
     return m
 

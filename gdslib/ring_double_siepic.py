@@ -41,21 +41,6 @@ def ring_double_siepic(
      in     n2 _/      \_n4 output
 
 
-    .. plot::
-      :include-source:
-
-      import pp
-
-      c = pp.c.ring(wg_width=0.5, gap=0.2, length_x=4, bend_radius=5, length_y=2)
-      pp.plotgds(c)
-
-
-    .. plot::
-        :include-source:
-
-        import simphony.library.gdsfactory as cl
-        c = cl.ring()
-        cl.sweep_simulation(c)
     """
 
     waveguide = pp.call_if_func(waveguide)
