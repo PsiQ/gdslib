@@ -1,4 +1,3 @@
-from recommonmark.parser import CommonMarkParser
 from recommonmark.transform import AutoStructify
 
 project = "gdslib"
@@ -10,7 +9,6 @@ master_doc = "index"
 html_theme = "sphinx_rtd_theme"
 intersphinx_mapping = {"python": ("https://docs.python.org/3/", None)}
 
-source_parsers = {".md": CommonMarkParser}
 source_suffix = {
     ".rst": "restructuredtext",
     ".txt": "markdown",
@@ -32,7 +30,6 @@ extensions = [
     "recommonmark",
 ]
 
-# Order members by source
 autodoc_member_order = "bysource"
 
 
@@ -51,4 +48,4 @@ def linkcode_resolve(domain, info):
     if not info["module"]:
         return None
     filename = info["module"].replace(".", "/")
-    return "https://github.com/gdsfactory/gdslib/blob/master/{}.py".format(filename)
+    return f"https://github.com/gdslib/gdslib/blob/master/{filename}.py"
