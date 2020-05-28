@@ -34,7 +34,10 @@ def plot_sparameters(
     if callable(c):
         c = c()
     if wavelengths is None:
-        wavelengths = c.wavelengths
+        if hasattr(c, "wavelengths"):
+            wavelengths = c.wavelengths
+        else:
+            wavelengths = np.linspace(1520e-9, 1580e-9, 2000)
     f = speed_of_light / wavelengths
     s = c.s_parameters(freq=f)
 

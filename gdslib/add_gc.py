@@ -22,8 +22,8 @@ def add_gc(circuit, gc=gc1550te, cpi="input", cpo="output", gpi="port 1", gpo="p
         gpi-> gpo--|cpi cpo|--gpo <-gpi
                    |_______|
     """
-    c = Subcircuit(f"{circuit.name}_gc")
     gc = pp.call_if_func(gc)
+    c = Subcircuit(f"{circuit.name}_{gc.name}")
     c.add([(gc, "gci"), (gc, "gco"), (circuit, "circuit")])
     c.connect_many([("gci", gpo, "circuit", cpi), ("gco", gpo, "circuit", cpo)])
 
@@ -61,4 +61,5 @@ if __name__ == "__main__":
 
     c1 = mzi()
     c2 = add_gc(c1)
+    print(c2.name)
     sweep_simulation(c2)

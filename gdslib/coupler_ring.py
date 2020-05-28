@@ -3,7 +3,10 @@ import pp
 from gdslib.load import load
 
 
-def coupler_ring(c=pp.c.coupler_ring, **kwargs):
+@pp.autoname
+def coupler_ring(
+    c=pp.c.coupler_ring, wg_width=0.5, length_x=3, gap=0.2, bend_radius=10
+):
     """ coupler for half a ring
 
     Args:
@@ -30,7 +33,9 @@ def coupler_ring(c=pp.c.coupler_ring, **kwargs):
         gl.plot_sparameters(c)
 
     """
-    m = load(c, **kwargs)
+    if callable(c):
+        c = c(wg_width=wg_width, length_x=length_x, gap=gap, bend_radius=bend_radius)
+    m = load(c)
     return m
 
 
