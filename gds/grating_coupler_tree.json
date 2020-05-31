@@ -1,7 +1,7 @@
 {
   "json_version": 6,
   "cells": {
-    "grating_coupler_tree": {
+    "grating_coupler_tree_lib": {
       "name": "grating_coupler_tree",
       "class": "grating_coupler_tree",
       "component": {},
@@ -14,7 +14,7 @@
       "kwargs": "_empty",
       "n_waveguides": 4,
       "waveguide_spacing": 4,
-      "waveguide_function": "waveguide",
+      "waveguide": "waveguide",
       "grating_coupler_function": "grating_coupler_elliptical_te",
       "with_loop_back": "False",
       "route_filter": "connect_strip_way_points_no_taper",
@@ -24,10 +24,11 @@
         201,
         0
       ],
+      "waveguide_function": "waveguide",
       "module": "pp.components.grating_coupler.grating_coupler_tree"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
+  "git_hash": "2860b9e17e5cc37409454812d360af4c17316c45"
 }
