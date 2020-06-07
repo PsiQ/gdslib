@@ -14,11 +14,11 @@
       "straight_heater_factory": "wg_heater_connected",
       "straight_factory": "waveguide",
       "coupler_factory": "coupler",
-      "with_elec_connections": "True",
+      "with_elec_connections": "False",
       "module": "pp.components.mzi2x2"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
+  "git_hash": "e791943e5dbc0484445b47144b0f461d148de187"
 }
