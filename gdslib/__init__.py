@@ -12,18 +12,20 @@ from gdslib.sweep_simulation import sweep_simulation
 from gdslib.sweep_simulation_montecarlo import sweep_simulation_montecarlo
 
 
-__all__ = [
-    "load",
-    "coupler_ring",
-    "mmi1x2",
-    "mzi",
-    "ring_double",
-    "add_gc",
-    "plot_sparameters",
-    "sweep_simulation",
-    "get_transmission",
-    "sweep_simulation_montecarlo",
-]
+component_type2factory = dict(
+    load=load,
+    coupler_ring=coupler_ring,
+    mmi1x2=mmi1x2,
+    mzi=mzi,
+    ring_double=ring_double,
+    add_gc=add_gc,
+    plot_sparameters=plot_sparameters,
+    sweep_simulation=sweep_simulation,
+    get_transmission=get_transmission,
+    sweep_simulation_montecarlo=sweep_simulation_montecarlo,
+)
+
+__all__ = component_type2factory.keys()
 
 
 _elements = ["mmi1x2", "coupler_ring"]

@@ -1,0 +1,23 @@
+{
+  "json_version": 6,
+  "cells": {
+    "spiral": {
+      "name": "spiral",
+      "class": "spiral",
+      "width": 500,
+      "length": 10000.0,
+      "spacing": "None",
+      "parity": 1,
+      "port": [
+        0,
+        0
+      ],
+      "direction": "NORTH",
+      "waveguide": "wg_strip",
+      "module": "pp.components.spiral"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+}

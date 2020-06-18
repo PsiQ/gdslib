@@ -3,6 +3,7 @@ import pp
 from gdslib.load import load
 
 
+@pp.autoname
 def mmi1x2(c=pp.c.mmi1x2):
     """ mmi1x2 Sparameter model
 
@@ -35,4 +36,5 @@ if __name__ == "__main__":
 
     plt.plot(wav, np.abs(s[:, 1] ** 2))
     print(c.pins)
+    print(c.settings)
     # plt.show()
