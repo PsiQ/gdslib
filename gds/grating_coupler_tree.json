@@ -1,13 +1,13 @@
 {
   "json_version": 6,
   "cells": {
-    "grating_coupler_tree_lib": {
+    "grating_coupler_tree": {
       "name": "grating_coupler_tree",
       "class": "grating_coupler_tree",
-      "component": {},
+      "component": "n_waveguides_waveguide_spacing_waveguide",
       "grating_coupler": "grating_coupler_te",
       "gc_port_name": "W0",
-      "component_name": "None",
+      "component_name": "_grating_coupler_tree_73dc7b48",
       "taper_factory": "taper",
       "get_route_factory": "route_fiber_array",
       "get_input_labels_function": "get_input_labels",
@@ -24,11 +24,10 @@
         201,
         0
       ],
-      "waveguide_function": "waveguide",
       "module": "pp.components.grating_coupler.grating_coupler_tree"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "2860b9e17e5cc37409454812d360af4c17316c45"
+  "git_hash": "5599b821788e2d20154b8146ffde528400d20808"
 }

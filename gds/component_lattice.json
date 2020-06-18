@@ -1,0 +1,15 @@
+{
+  "json_version": 6,
+  "cells": {
+    "component_lattice": {
+      "name": "component_lattice",
+      "class": "component_lattice",
+      "lattice": "\n        C-X\n        CXX\n        CXX\n        C-X\n        ",
+      "components": "None",
+      "module": "pp.components.component_lattice"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5599b821788e2d20154b8146ffde528400d20808"
+}

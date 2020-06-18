@@ -1,0 +1,21 @@
+{
+  "json_version": 6,
+  "cells": {
+    "ring_single": {
+      "name": "ring_single",
+      "class": "ring_single",
+      "wg_width": 0.5,
+      "gap": 0.2,
+      "length_x": 4,
+      "bend_radius": 5,
+      "length_y": 2,
+      "coupler": "coupler_ring",
+      "waveguide": "waveguide",
+      "bend": "bend_circular",
+      "module": "pp.components.ring_single"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5599b821788e2d20154b8146ffde528400d20808"
+}

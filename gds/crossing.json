@@ -1,0 +1,14 @@
+{
+  "json_version": 6,
+  "cells": {
+    "crossing": {
+      "name": "crossing",
+      "class": "crossing",
+      "arm": "crossing_arm",
+      "module": "pp.components.crossing_waveguide"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5599b821788e2d20154b8146ffde528400d20808"
+}

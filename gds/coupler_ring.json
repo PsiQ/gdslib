@@ -1,0 +1,19 @@
+{
+  "json_version": 6,
+  "cells": {
+    "coupler_ring": {
+      "name": "coupler_ring",
+      "class": "coupler_ring",
+      "coupler90_factory": "coupler90",
+      "cpl_straight_factory": "coupler_straight",
+      "length_x": 4.0,
+      "gap": 0.2,
+      "wg_width": 0.5,
+      "bend_radius": 5,
+      "module": "pp.components.coupler_ring"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5599b821788e2d20154b8146ffde528400d20808"
+}

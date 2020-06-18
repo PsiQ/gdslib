@@ -1,0 +1,21 @@
+{
+  "json_version": 6,
+  "cells": {
+    "delay_snake": {
+      "name": "delay_snake",
+      "class": "delay_snake",
+      "total_length": 160000,
+      "L0": 2350.0,
+      "n": 5,
+      "taper": "taper",
+      "bend_factory": "bend_circular",
+      "bend_radius": 10.0,
+      "straight_factory": "waveguide",
+      "wg_width": 0.5,
+      "module": "pp.components.delay_snake"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5599b821788e2d20154b8146ffde528400d20808"
+}

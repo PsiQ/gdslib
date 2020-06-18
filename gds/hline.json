@@ -1,0 +1,19 @@
+{
+  "json_version": 6,
+  "cells": {
+    "hline": {
+      "name": "hline",
+      "class": "hline",
+      "length": 10,
+      "width": 0.5,
+      "layer": [
+        1,
+        0
+      ],
+      "module": "pp.components.hline"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5599b821788e2d20154b8146ffde528400d20808"
+}

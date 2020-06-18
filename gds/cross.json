@@ -1,0 +1,16 @@
+{
+  "json_version": 6,
+  "cells": {
+    "cross": {
+      "name": "cross",
+      "class": "cross",
+      "length": 10,
+      "width": 3,
+      "layer": 0,
+      "module": "pp.components.cross"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5599b821788e2d20154b8146ffde528400d20808"
+}
