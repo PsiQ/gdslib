@@ -128,7 +128,6 @@ Icon?
 *.wpu
 
 # Fab-specific
-*.gds
 *.gds2
 
 # Random stuff
