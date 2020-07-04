@@ -2,23 +2,23 @@
   "json_version": 6,
   "cells": {
     "mzi2x2": {
-      "name": "mzi2x2",
-      "class": "mzi2x2",
       "CL_1": 20.147,
-      "L0": 60,
+      "L0": 60.0,
       "L1": 7.38,
       "L2": 10.0,
-      "gap": 0.234,
-      "bend_radius": 10.0,
       "bend90_factory": "bend_circular",
-      "straight_heater_factory": "wg_heater_connected",
-      "straight_factory": "waveguide",
+      "bend_radius": 10.0,
+      "class": "mzi2x2",
       "coupler_factory": "coupler",
-      "with_elec_connections": "False",
-      "module": "pp.components.mzi2x2"
+      "gap": 0.234,
+      "module": "pp.components.mzi2x2",
+      "name": "mzi2x2",
+      "straight_factory": "waveguide",
+      "straight_heater_factory": "wg_heater_connected",
+      "with_elec_connections": "False"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

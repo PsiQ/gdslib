@@ -2,29 +2,29 @@
   "json_version": 6,
   "cells": {
     "spiral_inner_io_euler": {
-      "name": "spiral_inner_io_euler",
-      "class": "spiral_inner_io_euler",
       "N": 6,
-      "x_straight_inner_right": 150.0,
-      "x_straight_inner_left": 150.0,
-      "y_straight_inner_top": 50.0,
-      "y_straight_inner_bottom": 10,
-      "grating_spacing": 127,
-      "dx": 3,
-      "dy": 3,
-      "bend90_function": "bend_euler90",
       "bend180_function": "bend_euler180",
-      "bend_radius": 50,
-      "wg_width": 0.5,
-      "wg_width_grating_coupler": 0.5,
+      "bend90_function": "bend_euler90",
+      "bend_radius": 50.0,
+      "class": "spiral_inner_io_euler",
+      "dx": 3.0,
+      "dy": 3.0,
+      "grating_spacing": 127.0,
+      "kwargs": "_empty",
+      "length": "20914.664633974484",
+      "module": "pp.components.spiral_inner_io",
+      "name": "spiral_inner_io_euler",
       "straight_factory": "waveguide",
       "taper": "None",
-      "length": "20914.664633974484",
-      "kwargs": "_empty",
-      "module": "pp.components.spiral_inner_io"
+      "wg_width": 0.5,
+      "wg_width_grating_coupler": 0.5,
+      "x_straight_inner_left": 150.0,
+      "x_straight_inner_right": 150.0,
+      "y_straight_inner_bottom": 10.0,
+      "y_straight_inner_top": 50.0
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

@@ -2,16 +2,19 @@
   "json_version": 6,
   "cells": {
     "bend_euler90": {
-      "name": "bend_euler90",
       "class": "bend_euler90",
+      "layer": [
+        1,
+        0
+      ],
+      "module": "pp.components.euler.bend_euler",
+      "name": "bend_euler90",
       "radius": 10.0,
-      "width": 0.5,
       "resolution": 150.0,
-      "layer": "1_0",
-      "name_function": "bend_euler90"
+      "width": 0.5
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

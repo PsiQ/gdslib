@@ -2,22 +2,22 @@
   "json_version": 6,
   "cells": {
     "taper": {
-      "name": "taper",
+      "cladding_offset": 3.0,
       "class": "taper",
-      "length": 35.0,
-      "width1": 0.5,
-      "width2": "None",
-      "port": "None",
       "layer": [
         1,
         0
       ],
       "layers_cladding": [],
-      "cladding_offset": 3,
-      "module": "pp.components.taper"
+      "length": 35.0,
+      "module": "pp.components.taper",
+      "name": "taper",
+      "port": "None",
+      "width1": 0.5,
+      "width2": "None"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

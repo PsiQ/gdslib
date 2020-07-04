@@ -2,27 +2,27 @@
   "json_version": 6,
   "cells": {
     "bend_s": {
-      "name": "bend_s",
+      "cladding_offset": 3.0,
       "class": "bend_s",
-      "width": 0.5,
-      "height": 2,
-      "length": 10,
+      "height": 2.0,
       "layer": [
         1,
         0
       ],
-      "nb_points": 99,
       "layers_cladding": [
         [
           111,
           0
         ]
       ],
-      "cladding_offset": 3,
-      "module": "pp.components.bend_s"
+      "length": 10.0,
+      "module": "pp.components.bend_s",
+      "name": "bend_s",
+      "nb_points": 99,
+      "width": 0.5
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

@@ -2,15 +2,15 @@
   "json_version": 6,
   "cells": {
     "bend_circular_heater": {
-      "name": "bend_circular_heater",
       "class": "bend_circular_heater",
+      "module": "pp.components.bend_circular_heater",
+      "name": "bend_circular_heater",
       "radius": 10.0,
       "wg_width": 0.5,
-      "width": 0.5,
-      "module": "pp.components.bend_circular_heater"
+      "width": 0.5
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

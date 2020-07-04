@@ -2,17 +2,17 @@
   "json_version": 6,
   "cells": {
     "coupler90": {
-      "name": "coupler90",
-      "class": "coupler90",
-      "bend_radius": 10.0,
-      "width": 0.5,
-      "gap": 0.2,
-      "waveguide_factory": "waveguide",
       "bend90_factory": "bend_circular",
-      "module": "pp.components.coupler90"
+      "bend_radius": 10.0,
+      "class": "coupler90",
+      "gap": 0.2,
+      "module": "pp.components.coupler90",
+      "name": "coupler90",
+      "waveguide_factory": "waveguide",
+      "width": 0.5
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

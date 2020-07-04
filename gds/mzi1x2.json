@@ -2,21 +2,21 @@
   "json_version": 6,
   "cells": {
     "mzi1x2": {
-      "name": "mzi1x2",
-      "class": "mzi1x2",
       "L0": 0.1,
-      "L1": 9,
-      "L2": 10,
-      "bend_radius": 10.0,
+      "L1": 9.0,
+      "L2": 10.0,
       "bend90_factory": "bend_circular",
-      "straight_heater_factory": "wg_heater_connected",
-      "straight_factory": "waveguide",
+      "bend_radius": 10.0,
+      "class": "mzi1x2",
       "coupler_factory": "mmi1x2",
-      "with_elec_connections": "False",
-      "module": "pp.components.mzi1x2"
+      "module": "pp.components.mzi1x2",
+      "name": "mzi1x2",
+      "straight_factory": "waveguide",
+      "straight_heater_factory": "wg_heater_connected",
+      "with_elec_connections": "False"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

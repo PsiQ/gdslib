@@ -2,13 +2,13 @@
   "json_version": 6,
   "cells": {
     "ring_double_bus": {
-      "name": "ring_double_bus",
       "class": "ring_double_bus",
       "kwargs": "_empty",
-      "module": "pp.components.ring_double_bus"
+      "module": "pp.components.ring_double_bus",
+      "name": "ring_double_bus"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

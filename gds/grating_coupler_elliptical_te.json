@@ -2,27 +2,33 @@
   "json_version": 6,
   "cells": {
     "grating_coupler_elliptical_te": {
-      "name": "grating_coupler_elliptical_te",
+      "big_last_tooth": "False",
       "class": "grating_coupler_elliptical_te",
-      "polarization": "te",
-      "taper_length": 16.6,
-      "taper_angle": 40.0,
-      "lambda_c": 1.554,
       "fiber_angle": 15.0,
       "grating_line_width": 0.343,
-      "wg_width": 0.5,
-      "neff": 2.638,
+      "kwargs": "_empty",
+      "lambda_c": 1.554,
       "layer": [
         1,
         0
       ],
-      "p_start": 26,
+      "layer_slab": [
+        2,
+        0
+      ],
+      "module": "pp.components.grating_coupler.elliptical",
       "n_periods": 24,
-      "big_last_tooth": "False",
-      "module": "pp.components.grating_coupler.elliptical"
+      "name": "grating_coupler_elliptical_te",
+      "neff": 2.638,
+      "p_start": 26,
+      "polarization": "te",
+      "taper_angle": 40.0,
+      "taper_length": 16.6,
+      "wg_width": 0.5,
+      "with_fiber_marker": "True"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

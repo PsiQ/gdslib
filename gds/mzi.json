@@ -2,20 +2,20 @@
   "json_version": 6,
   "cells": {
     "mzi": {
-      "name": "mzi",
-      "class": "mzi",
-      "L0": 1,
-      "L1": 9,
-      "L2": 10,
-      "bend_radius": 10.0,
+      "L0": 1.0,
+      "L1": 9.0,
+      "L2": 10.0,
       "bend90_factory": "bend_circular",
-      "straight_factory": "waveguide",
-      "coupler_factory": "mmi1x2",
+      "bend_radius": 10.0,
+      "class": "mzi",
       "combiner_factory": "None",
-      "module": "pp.components.mzi"
+      "coupler_factory": "mmi1x2",
+      "module": "pp.components.mzi",
+      "name": "mzi",
+      "straight_factory": "waveguide"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "e675bf98e17c3de59ea20e045d901152ffee311b"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

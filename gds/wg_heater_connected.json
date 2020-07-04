@@ -2,10 +2,10 @@
   "json_version": 6,
   "cells": {
     "wg_heater_connected": {
-      "name": "wg_heater_connected",
       "class": "wg_heater_connected",
-      "waveguide_heater": "waveguide_heater",
-      "wg_heater_connector": "wg_heater_connector",
+      "kwargs": "_empty",
+      "module": "pp.components.waveguide_heater",
+      "name": "wg_heater_connected",
       "tlm_layers": [
         [
           40,
@@ -32,11 +32,11 @@
           0
         ]
       ],
-      "kwargs": "_empty",
-      "module": "pp.components.waveguide_heater"
+      "waveguide_heater": "waveguide_heater",
+      "wg_heater_connector": "wg_heater_connector"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

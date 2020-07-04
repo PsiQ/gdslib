@@ -2,13 +2,13 @@
   "json_version": 6,
   "cells": {
     "coupler": {
-      "name": "coupler",
       "class": "coupler",
       "kwargs": "_empty",
-      "module": "pp.components.coupler"
+      "module": "pp.components.coupler",
+      "name": "coupler"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

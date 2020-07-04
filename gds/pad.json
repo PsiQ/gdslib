@@ -2,18 +2,18 @@
   "json_version": 6,
   "cells": {
     "pad": {
-      "name": "pad",
       "class": "pad",
-      "width": 100.0,
-      "height": 100.0,
+      "height": 100,
       "layer": [
         49,
         0
       ],
-      "module": "pp.components.electrical.pad"
+      "module": "pp.components.electrical.pad",
+      "name": "pad",
+      "width": 100
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "87db1014d17a5b1028ed7dd37d1e99937c8647e7"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

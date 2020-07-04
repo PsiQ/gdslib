@@ -2,11 +2,10 @@
   "json_version": 6,
   "cells": {
     "coupler_symmetric": {
-      "name": "coupler_symmetric",
-      "class": "coupler_symmetric",
       "bend": "bend_s",
+      "cladding_offset": 3.0,
+      "class": "coupler_symmetric",
       "gap": 0.234,
-      "wg_width": 0.5,
       "layer": [
         1,
         0
@@ -17,11 +16,12 @@
           0
         ]
       ],
-      "cladding_offset": 3,
-      "module": "pp.components.coupler_symmetric"
+      "module": "pp.components.coupler_symmetric",
+      "name": "coupler_symmetric",
+      "wg_width": 0.5
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

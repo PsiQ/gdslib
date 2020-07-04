@@ -11,7 +11,7 @@
       ],
       "fins": "False",
       "kwargs": "_empty",
-      "length": 10,
+      "length": 10.0,
       "module": "pp.components.dbr2",
       "name": "dbr2",
       "period": 0.85,
@@ -21,12 +21,12 @@
       ],
       "taper_length": 20.0,
       "w1": 0.4,
-      "w2": 1,
+      "w2": 1.0,
       "waveguide_template": "wg_strip",
       "waveguide_template_dbr": "None"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "0e0472af1a33c301b1973dcb75d4d288afbe5bbe"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

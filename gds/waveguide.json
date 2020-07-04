@@ -2,10 +2,8 @@
   "json_version": 6,
   "cells": {
     "waveguide": {
-      "name": "waveguide",
+      "cladding_offset": 3.0,
       "class": "waveguide",
-      "length": 10,
-      "width": 0.5,
       "layer": [
         1,
         0
@@ -16,11 +14,13 @@
           0
         ]
       ],
-      "cladding_offset": 3,
-      "module": "pp.components.waveguide"
+      "length": 10.0,
+      "module": "pp.components.waveguide",
+      "name": "waveguide",
+      "width": 0.5
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

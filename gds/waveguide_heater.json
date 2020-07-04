@@ -2,16 +2,26 @@
   "json_version": 6,
   "cells": {
     "waveguide_heater": {
-      "name": "waveguide_heater",
       "class": "waveguide_heater",
-      "width": 0.5,
-      "heater_width": 0.5,
       "heater_spacing": 1.2,
+      "heater_width": 0.5,
+      "layer_trench": [
+        7,
+        0
+      ],
+      "layers_heater": [
+        [
+          47,
+          0
+        ]
+      ],
       "length": 10.0,
       "metal_connection": "True",
+      "module": "pp.components.waveguide_heater",
+      "name": "waveguide_heater",
       "sstw": 2.0,
-      "trench_width": 0.5,
       "trench_keep_out": 2.0,
+      "trench_width": 0.5,
       "trenches": [
         {
           "nb_segments": 2,
@@ -24,21 +34,11 @@
           "x_start_offset": 0
         }
       ],
-      "layers_heater": [
-        [
-          47,
-          0
-        ]
-      ],
       "waveguide_factory": "waveguide",
-      "layer_trench": [
-        7,
-        0
-      ],
-      "module": "pp.components.waveguide_heater"
+      "width": 0.5
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d982b24db6ea2f9d4feadbd9ab50acd1a1d46ed8"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }

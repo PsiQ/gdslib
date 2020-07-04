@@ -2,16 +2,16 @@
   "json_version": 6,
   "cells": {
     "coupler_asymmetric": {
-      "name": "coupler_asymmetric",
-      "class": "coupler_asymmetric",
       "bend": "bend_s",
-      "waveguide": "waveguide",
+      "class": "coupler_asymmetric",
       "gap": 0.234,
-      "wg_width": 0.5,
-      "module": "pp.components.coupler_asymmetric"
+      "module": "pp.components.coupler_asymmetric",
+      "name": "coupler_asymmetric",
+      "waveguide": "waveguide",
+      "wg_width": 0.5
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
 }
