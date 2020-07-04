@@ -2,20 +2,23 @@
   "json_version": 6,
   "cells": {
     "rectangle": {
-      "name": "rectangle",
-      "class": "rectangle",
-      "size": [
-        4,
-        2
-      ],
-      "layer": 0,
       "centered": "False",
-      "ports_parameters": "",
+      "class": "rectangle",
+      "layer": [
+        1,
+        0
+      ],
+      "module": "pp.components.rectangle",
+      "name": "rectangle",
       "port_settings": "_empty",
-      "name_function": "rectangle"
+      "ports_parameters": {},
+      "size": [
+        4.0,
+        2.0
+      ]
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "d335e9bc926fd99382955ed71886e076abb1006e"
+  "git_hash": "50d230b9779499a52bd0096e37a3d6e29769dacb"
 }

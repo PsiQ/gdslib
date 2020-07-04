@@ -2,18 +2,21 @@
   "json_version": 6,
   "cells": {
     "ellipse": {
-      "name": "ellipse",
-      "class": "ellipse",
-      "radii": [
-        10,
-        5
-      ],
       "angle_resolution": 2.5,
-      "layer": 0,
-      "module": "pp.components.ellipse"
+      "class": "ellipse",
+      "layer": [
+        1,
+        0
+      ],
+      "module": "pp.components.ellipse",
+      "name": "ellipse",
+      "radii": [
+        10.0,
+        5.0
+      ]
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+  "git_hash": "faf95c7c2ce4402eff595a7db5421397afb6a36c"
 }

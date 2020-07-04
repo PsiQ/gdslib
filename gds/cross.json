@@ -2,15 +2,18 @@
   "json_version": 6,
   "cells": {
     "cross": {
-      "name": "cross",
       "class": "cross",
-      "length": 10,
-      "width": 3,
-      "layer": 0,
-      "module": "pp.components.cross"
+      "layer": [
+        1,
+        0
+      ],
+      "length": 10.0,
+      "module": "pp.components.cross",
+      "name": "cross",
+      "width": 3.0
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+  "git_hash": "faf95c7c2ce4402eff595a7db5421397afb6a36c"
 }

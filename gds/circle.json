@@ -2,15 +2,18 @@
   "json_version": 6,
   "cells": {
     "circle": {
-      "name": "circle",
-      "class": "circle",
-      "radius": 10,
       "angle_resolution": 2.5,
-      "layer": 0,
-      "module": "pp.components.circle"
+      "class": "circle",
+      "layer": [
+        1,
+        0
+      ],
+      "module": "pp.components.circle",
+      "name": "circle",
+      "radius": 10.0
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+  "git_hash": "faf95c7c2ce4402eff595a7db5421397afb6a36c"
 }
