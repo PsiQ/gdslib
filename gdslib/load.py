@@ -19,7 +19,7 @@ def load(component=None, filepath=None, numports=None, **kwargs):
     if filepath is None:
         component = pp.call_if_func(component, **kwargs)
     pins, f, s = pp.sp.load(
-        component, filepath=filepath, dirpath=CONFIG["sp"], numports=numports
+        component, filepath=filepath, dirpath=CONFIG.sp, numports=numports
     )
 
     def interpolate_sp(freq):

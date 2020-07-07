@@ -22,8 +22,8 @@ def test_elements(component_type, data_regression):
     data_regression.check(sdict)
 
 
-@pytest.mark.parametrize("component_type", _circuits)
-def test_circuits(component_type, data_regression):
-    c = component_type2factory[component_type]()
-    r = get_transmission(c, num=3)
-    data_regression.check(dict(w=r["wavelength_nm"].tolist(), s=r["s"].tolist()))
+# @pytest.mark.parametrize("component_type", _circuits)
+# def test_circuits(component_type, data_regression):
+#     c = component_type2factory[component_type]()
+#     r = get_transmission(c, num=3)
+#     data_regression.check(dict(w=r["wavelength_nm"].tolist(), s=r["s"].tolist()))
