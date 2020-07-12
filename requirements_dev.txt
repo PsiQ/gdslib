@@ -2,4 +2,8 @@ sphinx
 sphinx-rtd-theme
 recommonmark
 sphinx-markdown-tables
+sphinx-autodoc-typehints
 matplotlib
+pytest
+pytest-regressions
+pre-commit

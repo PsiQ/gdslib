@@ -1,6 +1,6 @@
 # gdslib 0.0.1
 
-gds and Sparameters library
+Stores GDS geometry, JSON metadata and Sparameters (with models) for the generic `gdsfactory` photonics library
 
 ## Usage
 
@@ -9,7 +9,7 @@ See notebooks
 
 ## Tests
 
-pytest runs regression tests over the Sparameters for components and circuits
+pytest runs pytest-regressions over the Sparameters for components and circuits
 
 
 ## Installation

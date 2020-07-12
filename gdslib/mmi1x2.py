@@ -8,10 +8,10 @@ def mmi1x2(c=pp.c.mmi1x2):
     """ mmi1x2 Sparameter model
 
     .. code::
-                 ____
-                |   |_ E1
-        W0 -----|   |_ E0
-                |___|
+            ____
+           |   |_ E1
+       W0 -|   |_ E0
+           |___|
 
     .. plot::
         :include-source:

@@ -7,12 +7,12 @@ from gdslib.mmi1x2 import mmi1x2
 
 
 @pp.autoname
-def mzi(L0=1, L1=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral_1550):
+def mzi(L0=1, DL=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral_1550):
     """ Mzi circuit model
 
     Args:
         L0 (um): vertical length for both and top arms
-        L1 (um): bottom arm extra length, delta_length = 2*L1
+        DL (um): bottom arm extra length, delta_length = 2*DL
         L2 (um): L_top horizontal length
 
     .. code::
@@ -25,7 +25,7 @@ def mzi(L0=1, L1=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral
                |      |
                L0     L0r
                |      |
-               L1     L1
+               DL     DL
                |      |
                |__L2__|
 
@@ -35,7 +35,7 @@ def mzi(L0=1, L1=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral
 
       import pp
 
-      c = pp.c.mzi(L0=0.1, L1=0, L2=10)
+      c = pp.c.mzi(L0=0.1, DL=0, L2=10)
       pp.plotgds(c)
 
 
@@ -50,7 +50,7 @@ def mzi(L0=1, L1=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral
 
     """
     y = pp.call_if_func(y_model_factory)
-    wg_long = wg(length=(2 * L0 + 2 * L1 + L2) * 1e-6)
+    wg_long = wg(length=(2 * L0 + 2 * DL + L2) * 1e-6)
     wg_short = wg(length=(2 * L0 + L2) * 1e-6)
 
     # Create the circuit, add all individual instances
