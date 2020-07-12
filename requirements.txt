@@ -1,2 +1,2 @@
 git+git://github.com/gdsfactory/gdsfactory
-simphony
+git+git://github.com/BYUCamachoLab/simphony
