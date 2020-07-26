@@ -1,8 +1,8 @@
 {
-  "json_version": 6,
+  "json_version": 7,
   "cells": {
     "mmi2x2": {
-      "class": "mmi2x2",
+      "function_name": "mmi2x2",
       "gap_mmi": 0.2,
       "layer": [
         1,
@@ -22,5 +22,5 @@
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+  "git_hash": "d6f7ffd64d92481627d3aa7ede93cbf5324bd6c2"
 }

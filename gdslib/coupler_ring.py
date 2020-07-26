@@ -1,9 +1,10 @@
 import pp
 
 from gdslib.load import load
+from gdslib.autoname import autoname
 
 
-@pp.autoname
+@autoname
 def coupler_ring(
     c=pp.c.coupler_ring, wg_width=0.5, length_x=3, gap=0.2, bend_radius=10
 ):

@@ -1,0 +1,16 @@
+{
+  "json_version": 7,
+  "cells": {
+    "crossing45": {
+      "alpha": 0.08,
+      "dx": "None",
+      "function_name": "crossing45",
+      "module": "pp.components.crossing_waveguide",
+      "name": "crossing45",
+      "port_spacing": 40.0
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5ad36a290e247ce20eb2cfdd6fa99892ec0d3b78"
+}

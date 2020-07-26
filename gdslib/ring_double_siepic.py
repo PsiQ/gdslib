@@ -1,11 +1,11 @@
-import pp
 from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
 from gdslib import sweep_simulation
+from gdslib.autoname import autoname
 
 
-@pp.autoname
+@autoname
 def ring_double_siepic(
     wg_width=0.5,
     gap=0.2,
@@ -43,8 +43,8 @@ def ring_double_siepic(
 
     """
 
-    waveguide = pp.call_if_func(waveguide)
-    coupler = pp.call_if_func(coupler)
+    waveguide = waveguide() if callable(waveguide) else waveguide
+    coupler = coupler() if callable(coupler) else coupler
 
     # Create the circuit, add all individual instances
     circuit = Subcircuit("mzi")

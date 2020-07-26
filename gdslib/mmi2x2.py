@@ -1,9 +1,10 @@
 import pp
 
 from gdslib.load import load
+from gdslib.autoname import autoname
 
 
-@pp.autoname
+@autoname
 def mmi2x2(c=pp.c.mmi2x2, **kwargs):
     """ mmi1x2 Sparameter model
 

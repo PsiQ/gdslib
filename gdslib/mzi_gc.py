@@ -1,17 +1,17 @@
-import pp
 from gdslib import sweep_simulation
 from gdslib.mmi1x2 import mmi1x2
 from simphony.library import siepic
 from simphony.netlist import Subcircuit
+from gdslib.autoname import autoname
 
 
-@pp.autoname
+@autoname
 def mzi_gc(L0=1, L1=100, L2=10, y_model_factory=mmi1x2):
     """ MZI with grating couplers
     Deprecated!
     use add_gc instead
     """
-    y = pp.call_if_func(y_model_factory)
+    y = y_model_factory() if callable(y_model_factory) else y_model_factory
     gc = siepic.ebeam_gc_te1550()
     wg_long = siepic.ebeam_wg_integral_1550(length=(2 * L0 + 2 * L1 + L2) * 1e-6)
     wg_short = siepic.ebeam_wg_integral_1550(length=(2 * L0 + L2) * 1e-6)

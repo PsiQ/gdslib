@@ -1,9 +1,9 @@
 {
-  "json_version": 6,
+  "json_version": 7,
   "cells": {
     "mmi1x2": {
       "cladding_offset": 3.0,
-      "class": "mmi1x2",
+      "function_name": "mmi1x2",
       "gap_mmi": 0.25,
       "layer": [
         1,
@@ -24,5 +24,5 @@
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+  "git_hash": "d6f7ffd64d92481627d3aa7ede93cbf5324bd6c2"
 }

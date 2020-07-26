@@ -8,12 +8,12 @@ from gdslib.config import CONFIG
 
 
 def load(component=None, filepath=None, numports=None, **kwargs):
-    """ load Sparameters for a component
+    """ load gdsfactory component Sparameters
 
     Args:
         component: component factory or instance
         filepath:
-        numport number of ports
+        numports: number of ports
         **kwargs
     """
     if filepath is None:

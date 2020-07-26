@@ -1,14 +1,14 @@
 {
-  "json_version": 6,
+  "json_version": 7,
   "cells": {
     "mzi1x2": {
+      "DL": 9.0,
       "L0": 0.1,
-      "L1": 9.0,
       "L2": 10.0,
       "bend90_factory": "bend_circular",
       "bend_radius": 10.0,
-      "class": "mzi1x2",
       "coupler_factory": "mmi1x2",
+      "function_name": "mzi1x2",
       "module": "pp.components.mzi1x2",
       "name": "mzi1x2",
       "straight_factory": "waveguide",
@@ -18,5 +18,5 @@
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+  "git_hash": "d6f7ffd64d92481627d3aa7ede93cbf5324bd6c2"
 }

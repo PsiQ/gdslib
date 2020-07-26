@@ -1,0 +1,14 @@
+{
+  "json_version": 7,
+  "cells": {
+    "compensation_path": {
+      "direction": "top",
+      "function_name": "compensation_path",
+      "module": "pp.components.crossing_waveguide",
+      "name": "compensation_path"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5ad36a290e247ce20eb2cfdd6fa99892ec0d3b78"
+}

@@ -1,12 +1,12 @@
-import pp
 from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
 from gdslib import sweep_simulation
 from gdslib.mmi1x2 import mmi1x2
+from gdslib.autoname import autoname
 
 
-@pp.autoname
+@autoname
 def mzi(L0=1, DL=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral_1550):
     """ Mzi circuit model
 
@@ -14,6 +14,8 @@ def mzi(L0=1, DL=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral
         L0 (um): vertical length for both and top arms
         DL (um): bottom arm extra length, delta_length = 2*DL
         L2 (um): L_top horizontal length
+
+    Returns: mzi circuit model
 
     .. code::
 
@@ -49,7 +51,7 @@ def mzi(L0=1, DL=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral
 
 
     """
-    y = pp.call_if_func(y_model_factory)
+    y = y_model_factory() if callable(y_model_factory) else y_model_factory
     wg_long = wg(length=(2 * L0 + 2 * DL + L2) * 1e-6)
     wg_short = wg(length=(2 * L0 + L2) * 1e-6)
 

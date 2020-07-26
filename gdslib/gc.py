@@ -1,10 +1,9 @@
-import pp
-
 from gdslib.config import CONFIG
 from gdslib.load import load
+from gdslib.autoname import autoname
 
 
-@pp.autoname
+@autoname
 def gc1550te(filepath=CONFIG.sp / "gc2dte" / "gc1550.dat", numports=2):
     m = load(filepath=filepath, numports=numports)
     return m

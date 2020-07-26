@@ -4,9 +4,10 @@ from simphony.netlist import Subcircuit
 
 from gdslib import sweep_simulation
 from gdslib.coupler_ring import coupler_ring
+from gdslib.autoname import autoname
 
 
-@pp.autoname
+@autoname
 def ring_double(
     wg_width=0.5,
     gap=0.2,
@@ -64,10 +65,8 @@ def ring_double(
         gl.sweep_simulation(c)
     """
 
-    waveguide = pp.call_if_func(waveguide)
-    coupler = pp.call_if_func(
-        coupler, length_x=length_x, bend_radius=bend_radius, gap=gap, wg_width=wg_width
-    )
+    waveguide = waveguide() if callable(waveguide) else waveguide
+    coupler = coupler(length_x=length_x, bend_radius=bend_radius, gap=gap, wg_width=wg_width) if callable(coupler) else coupler
 
     # Create the circuit, add all individual instances
     circuit = Subcircuit("ring_double")

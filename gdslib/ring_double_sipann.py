@@ -5,9 +5,10 @@ from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
 from gdslib import sweep_simulation
+from gdslib.autoname import autoname
 
 
-@pp.autoname
+@autoname
 def ring_double_sipann(
     wg_width=0.5,
     gap=0.2,
@@ -47,10 +48,9 @@ def ring_double_sipann(
         c = cl.ring()
         cl.sweep_simulation(c)
     """
-
-    waveguide = pp.call_if_func(waveguide)
-    half_ring = pp.call_if_func(coupler)
-    term = pp.call_if_func(coupler)
+    waveguide = waveguide() if callable(waveguide) else waveguide
+    half_ring = coupler() if callable(coupler) else coupler
+    term = coupler() if callable(coupler) else coupler
 
     circuit = Subcircuit()
     circuit.add([(half_ring, "input"), (half_ring, "output"), (term, "terminator")])
