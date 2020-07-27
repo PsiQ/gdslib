@@ -26,4 +26,4 @@ __all__ = [
     "plot_circuit",
     "plot_circuit_montecarlo",
 ]
-__version__ = "0.0.1"
+__version__ = "0.1.0"
