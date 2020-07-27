@@ -7,7 +7,7 @@ from simphony.tools import interpolate
 from gdslib.config import CONFIG
 
 
-def load(component=None, filepath=None, numports=None, **kwargs):
+def model_from_gdsfactory(component=None, filepath=None, numports=None, **kwargs):
     """returns simphony model from gdsfactory Component Sparameters
 
     Args:
@@ -18,7 +18,7 @@ def load(component=None, filepath=None, numports=None, **kwargs):
     """
     if filepath is None:
         component = pp.call_if_func(component, **kwargs)
-    pins, f, s = pp.sp.load(
+    pins, f, s = pp.sp.model_from_gdsfactory(
         component, filepath=filepath, dirpath=CONFIG.sp, numports=numports
     )
 
@@ -38,7 +38,7 @@ def load(component=None, filepath=None, numports=None, **kwargs):
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
 
-    c = load(pp.c.mmi1x2())
+    c = model_from_gdsfactory(pp.c.mmi1x2())
     # wav = np.linspace(1520, 1570, 1024) * 1e-9
     # f = speed_of_light / wav
     # s = c.s_parameters(freq=f)

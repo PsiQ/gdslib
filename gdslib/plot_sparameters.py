@@ -21,18 +21,22 @@ def logscale(x):
 def plot_sparameters(
     model, wavelengths=None, pins=None, label=None, function=magnitude_square_per_cent
 ):
-    """plots sparameters from a simphony model
+    """plots simphony model Sparameters
 
     Args:
-
-        wavelengths (nm):
+        model: simphony model
+        wavelengths (m):
+        pins: set of pins
+        label: Optional labell
+        function: for plotting
 
     .. plot::
         :include-source:
 
         import gdslib as gl
+        import gdslib.components as gc
 
-        c = gl.mmi1x2()
+        c = gc.mmi1x2()
         gl.plot_sparameters(c)
     """
     c = model() if callable(model) else model

@@ -1,7 +1,7 @@
 import pp
 
 from gdslib.autoname import autoname
-from gdslib.load import load
+from gdslib.model_from_gdsfactory import model_from_gdsfactory
 
 
 @autoname
@@ -36,7 +36,7 @@ def coupler_ring(
     """
     if callable(c):
         c = c(wg_width=wg_width, length_x=length_x, gap=gap, bend_radius=bend_radius)
-    m = load(c)
+    m = model_from_gdsfactory(c)
     return m
 
 

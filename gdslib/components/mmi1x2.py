@@ -1,7 +1,7 @@
 import pp
 
 from gdslib.autoname import autoname
-from gdslib.load import load
+from gdslib.model_from_gdsfactory import model_from_gdsfactory
 
 
 @autoname
@@ -22,7 +22,7 @@ def mmi1x2(c=pp.c.mmi1x2):
         c = gl.mmi1x2()
         gl.plot_sparameters(c)
     """
-    m = load(c)
+    m = model_from_gdsfactory(c)
     return m
 
 

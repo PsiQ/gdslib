@@ -1,11 +1,11 @@
 from gdslib.autoname import autoname
 from gdslib.config import CONFIG
-from gdslib.load import load
+from gdslib.model_from_gdsfactory import model_from_gdsfactory
 
 
 @autoname
 def gc1550te(filepath=CONFIG.sp / "gc2dte" / "gc1550.dat", numports=2):
-    m = load(filepath=filepath, numports=numports)
+    m = model_from_gdsfactory(filepath=filepath, numports=numports)
     return m
 
 
