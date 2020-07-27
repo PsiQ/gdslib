@@ -6,19 +6,15 @@
       "DL": 7.38,
       "L0": 60.0,
       "L2": 10.0,
-      "bend90_factory": "bend_circular",
       "bend_radius": 10.0,
-      "coupler_factory": "coupler",
       "function_name": "mzi2x2",
       "gap": 0.234,
       "module": "pp.components.mzi2x2",
       "name": "mzi2x2",
-      "straight_factory": "waveguide",
-      "straight_heater_factory": "wg_heater_connected",
       "with_elec_connections": "False"
     }
   },
   "test_protocol": {},
   "data_analysis_protocol": {},
-  "git_hash": "899e8842746f9e6cb618e4ca2cf4f52d2125b07f"
+  "git_hash": "6164955b3b35b6be02527c5c1baffb22b5da97fe"
 }
