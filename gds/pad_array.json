@@ -1,0 +1,26 @@
+{
+  "json_version": 6,
+  "cells": {
+    "pad_array": {
+      "class": "pad_array",
+      "module": "pp.components.electrical.pad",
+      "n": 6,
+      "name": "pad_array",
+      "pad": "pad",
+      "port_list": [
+        "N"
+      ],
+      "spacing": [
+        150,
+        0
+      ],
+      "start": [
+        0,
+        0
+      ]
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+}

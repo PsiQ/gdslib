@@ -1,0 +1,24 @@
+{
+  "json_version": 6,
+  "cells": {
+    "rectangle": {
+      "centered": "False",
+      "class": "rectangle",
+      "layer": [
+        1,
+        0
+      ],
+      "module": "pp.components.rectangle",
+      "name": "rectangle",
+      "port_settings": "_empty",
+      "ports_parameters": {},
+      "size": [
+        4.0,
+        2.0
+      ]
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+}

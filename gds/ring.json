@@ -1,0 +1,20 @@
+{
+  "json_version": 6,
+  "cells": {
+    "ring": {
+      "angle_resolution": 2.5,
+      "class": "ring",
+      "layer": [
+        1,
+        0
+      ],
+      "module": "pp.components.ring",
+      "name": "ring",
+      "radius": 10.0,
+      "width": 0.5
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+}

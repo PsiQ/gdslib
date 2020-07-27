@@ -1,0 +1,18 @@
+{
+  "json_version": 6,
+  "cells": {
+    "rectangle_centered": {
+      "name": "rectangle_centered",
+      "class": "rectangle_centered",
+      "w": 1,
+      "h": 1,
+      "x": "None",
+      "y": "None",
+      "layer": 0,
+      "module": "pp.components.rectangle"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+}

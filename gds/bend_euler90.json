@@ -1,0 +1,20 @@
+{
+  "json_version": 6,
+  "cells": {
+    "bend_euler90": {
+      "class": "bend_euler90",
+      "layer": [
+        1,
+        0
+      ],
+      "module": "pp.components.euler.bend_euler",
+      "name": "bend_euler90",
+      "radius": 10.0,
+      "resolution": 150.0,
+      "width": 0.5
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+}

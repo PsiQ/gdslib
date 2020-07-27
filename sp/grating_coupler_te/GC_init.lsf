@@ -1,0 +1,32 @@
+# define grating coupler parameters
+period = 6.82e-07;
+ff = 0.5029325513196481;
+gc_number = 50;
+
+# define wafer and waveguide structure
+thick_Si = 2.2e-07;
+etch_depth = 7e-08;
+thick_BOX = 2e-06;
+thick_Clad = 2e-06;
+Si_substrate = 2e-06;
+materials;
+material = "Si (Silicon) - Dispersive & Lossless";
+width_wg = 5e-07;
+
+# define input optical source parameters
+theta0 = 15;
+polarization='TE';
+lambda=1.55e-06;
+Position=4.5e-06;
+
+# define simulation parameters
+wl_span=0.3e-6;           # wavelength span
+mesh_accuracy=3;          # FDTD simulation mesh accuracy
+frequency_points=100;     # global frequency points
+simulation_time=1000e-15; # maximum simulation time [s]
+
+# define optical fibre parameters
+core_index=1.4682;
+cladding_index=1.4629;
+core_diameter=8.2e-6;
+cladding_diameter=100e-6;

@@ -1,0 +1,34 @@
+{
+  "json_version": 6,
+  "cells": {
+    "grating_coupler_elliptical_trenches_e050cf58": {
+      "name": "grating_coupler_elliptical_trenches_e050cf58",
+      "class": "grating_coupler_elliptical_trenches",
+      "period": "0.6759999999999999",
+      "polarization": "te",
+      "taper_length": 16.6,
+      "taper_angle": 35,
+      "trenches_extra_angle": 9.0,
+      "lambda_c": 1.53,
+      "fiber_angle": 15.0,
+      "grating_line_width": 0.343,
+      "wg_width": 0.5,
+      "neff": 2.638,
+      "layer": [
+        1,
+        0
+      ],
+      "layer_trench": [
+        2,
+        0
+      ],
+      "p_start": 26,
+      "n_periods": 30,
+      "straight": 0.2,
+      "module": "pp.components.grating_coupler.elliptical_trenches"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+}

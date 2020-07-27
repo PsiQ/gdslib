@@ -1,0 +1,33 @@
+{
+  "json_version": 6,
+  "cells": {
+    "grating_coupler_tree": {
+      "name": "grating_coupler_tree",
+      "class": "grating_coupler_tree",
+      "component": "n_waveguides_waveguide_spacing_waveguide",
+      "grating_coupler": "grating_coupler_te",
+      "gc_port_name": "W0",
+      "component_name": "_grating_coupler_tree_73dc7b48",
+      "taper_factory": "taper",
+      "get_route_factory": "route_fiber_array",
+      "get_input_labels_function": "get_input_labels",
+      "kwargs": "_empty",
+      "n_waveguides": 4,
+      "waveguide_spacing": 4,
+      "waveguide": "waveguide",
+      "grating_coupler_function": "grating_coupler_elliptical_te",
+      "with_loop_back": "False",
+      "route_filter": "connect_strip_way_points_no_taper",
+      "bend_factory": "bend_circular",
+      "bend_radius": 10.0,
+      "layer_label": [
+        201,
+        0
+      ],
+      "module": "pp.components.grating_coupler.grating_coupler_tree"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5599b821788e2d20154b8146ffde528400d20808"
+}

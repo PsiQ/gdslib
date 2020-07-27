@@ -1,0 +1,17 @@
+{
+  "json_version": 6,
+  "cells": {
+    "coupler_asymmetric": {
+      "bend": "bend_s",
+      "class": "coupler_asymmetric",
+      "gap": 0.234,
+      "module": "pp.components.coupler_asymmetric",
+      "name": "coupler_asymmetric",
+      "waveguide": "waveguide",
+      "wg_width": 0.5
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+}

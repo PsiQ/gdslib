@@ -1,0 +1,26 @@
+{
+  "json_version": 7,
+  "cells": {
+    "mmi2x2": {
+      "function_name": "mmi2x2",
+      "gap_mmi": 0.2,
+      "layer": [
+        1,
+        0
+      ],
+      "length_mmi": 15.45,
+      "length_taper": 10.0,
+      "module": "pp.components.mmi2x2",
+      "name": "mmi2x2",
+      "simulation_settings": {
+        "port_width": 1.5e-06
+      },
+      "wg_width": 0.5,
+      "width_mmi": 2.1,
+      "width_taper": 0.95
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "d6f7ffd64d92481627d3aa7ede93cbf5324bd6c2"
+}

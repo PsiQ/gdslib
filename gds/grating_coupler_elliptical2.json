@@ -1,0 +1,31 @@
+{
+  "json_version": 6,
+  "cells": {
+    "grating_coupler_elliptical2": {
+      "name": "grating_coupler_elliptical2",
+      "class": "grating_coupler_elliptical2",
+      "wgt": "wg_strip",
+      "theta": 0.7853981633974483,
+      "length": 30.0,
+      "taper_length": 10.0,
+      "period": 1.0,
+      "dutycycle": 0.7,
+      "ridge": "True",
+      "ridge_layers": [
+        2,
+        0
+      ],
+      "teeth_list": "None",
+      "port": [
+        0,
+        0
+      ],
+      "direction": "EAST",
+      "kwargs": "_empty",
+      "module": "pp.components.grating_coupler.elliptical2"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "74cf1ee2bb3e37e7a4d6b01c6e3cadbcd8c0fc77"
+}

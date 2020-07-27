@@ -1,0 +1,20 @@
+{
+  "json_version": 7,
+  "cells": {
+    "mzi2x2": {
+      "CL_1": 20.147,
+      "DL": 7.38,
+      "L0": 60.0,
+      "L2": 10.0,
+      "bend_radius": 10.0,
+      "function_name": "mzi2x2",
+      "gap": 0.234,
+      "module": "pp.components.mzi2x2",
+      "name": "mzi2x2",
+      "with_elec_connections": "False"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "6164955b3b35b6be02527c5c1baffb22b5da97fe"
+}

@@ -1,0 +1,27 @@
+{
+  "json_version": 6,
+  "cells": {
+    "coupler_straight": {
+      "cladding_offset": 3.0,
+      "class": "coupler_straight",
+      "gap": 0.27,
+      "layer": [
+        1,
+        0
+      ],
+      "layers_cladding": [
+        [
+          111,
+          0
+        ]
+      ],
+      "length": 10.0,
+      "module": "pp.components.coupler_straight",
+      "name": "coupler_straight",
+      "width": 0.5
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+}

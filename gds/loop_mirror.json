@@ -1,0 +1,15 @@
+{
+  "json_version": 7,
+  "cells": {
+    "loop_mirror": {
+      "bend90": "bend_euler90",
+      "component": "mmi1x2",
+      "function_name": "loop_mirror",
+      "module": "pp.components.loop_mirror",
+      "name": "loop_mirror"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "d6f7ffd64d92481627d3aa7ede93cbf5324bd6c2"
+}

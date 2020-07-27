@@ -1,0 +1,17 @@
+{
+  "json_version": 6,
+  "cells": {
+    "verniers": {
+      "class": "verniers",
+      "gap": 0.1,
+      "module": "pp.components.pcm.verniers",
+      "name": "verniers",
+      "size_max": 11,
+      "width_max": 0.5,
+      "width_min": 0.1
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "0e0472af1a33c301b1973dcb75d4d288afbe5bbe"
+}

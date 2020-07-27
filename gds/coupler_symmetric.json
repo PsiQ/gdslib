@@ -1,0 +1,27 @@
+{
+  "json_version": 6,
+  "cells": {
+    "coupler_symmetric": {
+      "bend": "bend_s",
+      "cladding_offset": 3.0,
+      "class": "coupler_symmetric",
+      "gap": 0.234,
+      "layer": [
+        1,
+        0
+      ],
+      "layers_cladding": [
+        [
+          111,
+          0
+        ]
+      ],
+      "module": "pp.components.coupler_symmetric",
+      "name": "coupler_symmetric",
+      "wg_width": 0.5
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+}

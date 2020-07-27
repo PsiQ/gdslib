@@ -1,0 +1,17 @@
+{
+  "json_version": 6,
+  "cells": {
+    "litho_star": {
+      "class": "litho_star",
+      "diameter": 200,
+      "layer": 0,
+      "line_width": 2,
+      "module": "pp.components.pcm.litho_star",
+      "name": "litho_star",
+      "num_lines": 20
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "5826788fc89fd92d70d772195b1baf71adbd3601"
+}

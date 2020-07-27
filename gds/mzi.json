@@ -1,0 +1,21 @@
+{
+  "json_version": 7,
+  "cells": {
+    "mzi": {
+      "DL": 9.0,
+      "L0": 1.0,
+      "L2": 10.0,
+      "bend90_factory": "bend_circular",
+      "bend_radius": 10.0,
+      "combiner_factory": "None",
+      "coupler_factory": "mmi1x2",
+      "function_name": "mzi",
+      "module": "pp.components.mzi",
+      "name": "mzi",
+      "straight_factory": "waveguide"
+    }
+  },
+  "test_protocol": {},
+  "data_analysis_protocol": {},
+  "git_hash": "d6f7ffd64d92481627d3aa7ede93cbf5324bd6c2"
+}
