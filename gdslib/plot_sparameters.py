@@ -19,9 +19,13 @@ def logscale(x):
 
 
 def plot_sparameters(
-    c, wavelengths=None, pins=None, label=None, function=magnitude_square_per_cent
+    model, wavelengths=None, pins=None, label=None, function=magnitude_square_per_cent
 ):
-    """ plots sparameters from a model
+    """plots sparameters from a simphony model
+
+    Args:
+
+        wavelengths (nm):
 
     .. plot::
         :include-source:
@@ -31,8 +35,8 @@ def plot_sparameters(
         c = gl.mmi1x2()
         gl.plot_sparameters(c)
     """
-    if callable(c):
-        c = c()
+    c = model() if callable(model) else model
+
     if wavelengths is None:
         if hasattr(c, "wavelengths"):
             wavelengths = c.wavelengths

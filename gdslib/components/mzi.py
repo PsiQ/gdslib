@@ -2,8 +2,8 @@ from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
 from gdslib import sweep_simulation
-from gdslib.mmi1x2 import mmi1x2
 from gdslib.autoname import autoname
+from gdslib.components.mmi1x2 import mmi1x2
 
 
 @autoname

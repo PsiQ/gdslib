@@ -1,10 +1,9 @@
 import numpy as np
 import pytest
 
-from gdslib import _circuits
-from gdslib import _elements
-from gdslib import component_type2factory
-from gdslib import get_transmission
+from gdslib.components import _circuits
+from gdslib.components import _elements
+from gdslib.components import component_type2factory
 
 
 @pytest.mark.parametrize("component_type", _elements)

@@ -2,7 +2,7 @@ import pp
 from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
-from gdslib.gc import gc1550te
+from gdslib.components.gc import gc1550te
 
 
 def add_gc(circuit, gc=gc1550te, cpi="input", cpo="output", gpi="port 1", gpo="port 2"):
@@ -57,7 +57,7 @@ def add_gc_siepic(circuit, gc=siepic.ebeam_gc_te1550):
 
 if __name__ == "__main__":
     from gdslib import sweep_simulation
-    from gdslib.mzi import mzi
+    from gdslib.components import mzi
 
     c1 = mzi()
     c2 = add_gc(c1)

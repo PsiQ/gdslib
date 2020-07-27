@@ -2,25 +2,18 @@ import numpy as np
 import pp
 from scipy.constants import speed_of_light
 from simphony.elements import Model
+from simphony.tools import freq2wl
 from simphony.tools import interpolate
+from simphony.tools import wl2freq
 
 from gdslib.config import CONFIG
 
 
-def load(component=None, filepath=None, numports=None, **kwargs):
-    """returns simphony model from gdsfactory Component Sparameters
+def model_from_sparameters(wavelengths, sparameters, pins=("E0", "W0")):
+    """returns simphony model from Sparameters"""
 
-    Args:
-        component: component factory or instance
-        filepath:
-        numports: number of ports
-        **kwargs
-    """
-    if filepath is None:
-        component = pp.call_if_func(component, **kwargs)
-    pins, f, s = pp.sp.load(
-        component, filepath=filepath, dirpath=CONFIG.sp, numports=numports
-    )
+    f = wl2freq(wavelengths)
+    s = sparameters
 
     def interpolate_sp(freq):
         return interpolate(freq, f, s)
@@ -29,16 +22,18 @@ def load(component=None, filepath=None, numports=None, **kwargs):
     m.pins = pins
     m.s_params = (f, s)
     m.s_parameters = interpolate_sp
-    m.freq_range = (m.s_params[0][0], m.s_params[0][-1])
+    m.freq_range = (m.s_params[0][-1], m.s_params[0][0])
+    m.wavelength_range = freq2wl(np.array([m.s_params[0][0], m.s_params[0][-1]]))
     m.wavelengths = speed_of_light / np.array(f)
     m.s = s
+    m.name = "model_from_sparameters"
     return m
 
 
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
 
-    c = load(pp.c.mmi1x2())
+    c = model_from_sparameters(pp.c.mmi1x2())
     # wav = np.linspace(1520, 1570, 1024) * 1e-9
     # f = speed_of_light / wav
     # s = c.s_parameters(freq=f)

@@ -1,7 +1,7 @@
 import pp
 
-from gdslib.load import load
 from gdslib.autoname import autoname
+from gdslib.load import load
 
 
 @autoname

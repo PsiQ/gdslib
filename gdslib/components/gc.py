@@ -1,6 +1,6 @@
+from gdslib.autoname import autoname
 from gdslib.config import CONFIG
 from gdslib.load import load
-from gdslib.autoname import autoname
 
 
 @autoname
