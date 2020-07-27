@@ -7,19 +7,26 @@ from simphony.tools import interpolate
 from gdslib.config import CONFIG
 
 
-def model_from_gdsfactory(component=None, filepath=None, numports=None, **kwargs):
+def model_from_gdsfactory(
+    component=None, filepath=None, numports=None, height_nm=220, **kwargs
+):
     """returns simphony model from gdsfactory Component Sparameters
 
     Args:
         component: component factory or instance
         filepath:
+        height_nm: height (nm)
         numports: number of ports
         **kwargs
     """
     if filepath is None:
         component = pp.call_if_func(component, **kwargs)
     pins, f, s = pp.sp.load(
-        component, filepath=filepath, dirpath=CONFIG.sp, numports=numports
+        component,
+        filepath=filepath,
+        dirpath=CONFIG.sp,
+        numports=numports,
+        height_nm=height_nm,
     )
 
     def interpolate_sp(freq):

@@ -18,7 +18,7 @@ def logscale(x):
     return 20 * np.log10(np.abs(x))
 
 
-def plot_sparameters(
+def plot_model(
     model, wavelengths=None, pins=None, label=None, function=magnitude_square_per_cent
 ):
     """plots simphony model Sparameters
@@ -37,7 +37,7 @@ def plot_sparameters(
         import gdslib.components as gc
 
         c = gc.mmi1x2()
-        gl.plot_sparameters(c)
+        gl.plot_model(c)
     """
     c = model() if callable(model) else model
 
@@ -73,6 +73,6 @@ if __name__ == "__main__":
     coupler = siepic.ebeam_dc_halfring_straight(
         gap=200e-9, radius=10e-6, width=500e-9, thickness=220e-9, couple_length=0.0
     )
-    plot_sparameters(coupler, wavelengths)
+    plot_model(coupler, wavelengths)
     plt.legend()
     plt.show()

@@ -31,7 +31,7 @@ def coupler_ring(
         import gdslib as gl
 
         c = gl.coupler_ring()
-        gl.plot_sparameters(c)
+        gl.plot_model(c)
 
     """
     if callable(c):

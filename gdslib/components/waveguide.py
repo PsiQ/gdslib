@@ -9,7 +9,7 @@ import numpy as np
 import pp
 from SiPANN.nn import straightWaveguide_S
 
-from gdslib import plot_sparameters
+from gdslib import plot_model
 from gdslib.autoname import autoname
 from gdslib.model_from_sparameters import model_from_sparameters
 
@@ -41,5 +41,5 @@ if __name__ == "__main__":
 
     c = waveguide()
     print(c)
-    # plot_sparameters(c)
+    # plot_model(c)
     # plt.show()

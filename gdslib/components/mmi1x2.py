@@ -5,7 +5,7 @@ from gdslib.model_from_gdsfactory import model_from_gdsfactory
 
 
 @autoname
-def mmi1x2(c=pp.c.mmi1x2):
+def mmi1x2(c=pp.c.mmi1x2, height_nm=220):
     """ mmi1x2 Sparameter model
 
     .. code::
@@ -20,9 +20,9 @@ def mmi1x2(c=pp.c.mmi1x2):
         import gdslib as gl
 
         c = gl.mmi1x2()
-        gl.plot_sparameters(c)
+        gl.plot_model(c)
     """
-    m = model_from_gdsfactory(c)
+    m = model_from_gdsfactory(c, height_nm=height_nm)
     return m
 
 

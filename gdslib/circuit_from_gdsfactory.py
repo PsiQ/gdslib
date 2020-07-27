@@ -2,7 +2,6 @@ from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
 from gdslib.components import component_type2factory
-from gdslib.model_from_gdsfactory import model_from_gdsfactory
 
 
 def circuit_from_gdsfactory(component):
@@ -38,7 +37,7 @@ if __name__ == "__main__":
     from gdslib import plot_circuit
     import pp
 
-    c = pp.c.mzi()
+    c = pp.c.mzi(DL=50)
     cm = circuit_from_gdsfactory(c)
     cm.elements["mmi1x2_12_0"].pins["W0"] = "input"
     cm.elements["mmi1x2_88_0"].pins["W0"] = "output"

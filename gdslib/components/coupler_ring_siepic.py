@@ -9,7 +9,7 @@
 """
 from simphony.library import siepic
 
-from gdslib import plot_sparameters
+from gdslib import plot_model
 
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
@@ -17,6 +17,6 @@ if __name__ == "__main__":
     c = siepic.ebeam_dc_halfring_straight(
         gap=200e-9, radius=12e-6, width=500e-9, thickness=220e-9, couple_length=0.0
     )
-    plot_sparameters(c)
+    plot_model(c)
     print(c)
     plt.show()

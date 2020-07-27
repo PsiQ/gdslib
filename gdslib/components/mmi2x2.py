@@ -20,7 +20,7 @@ def mmi2x2(c=pp.c.mmi2x2, **kwargs):
         import gdslib as gl
 
         c = gl.mmi2x2()
-        gl.plot_sparameters(c)
+        gl.plot_model(c)
     """
     m = model_from_gdsfactory(c)
     return m
