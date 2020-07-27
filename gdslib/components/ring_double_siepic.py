@@ -1,7 +1,7 @@
 from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
-from gdslib import sweep_simulation
+from gdslib import plot_circuit
 from gdslib.autoname import autoname
 
 
@@ -70,4 +70,4 @@ def ring_double_siepic(
 
 if __name__ == "__main__":
     c = ring_double_siepic()
-    sweep_simulation(c)
+    plot_circuit(c)

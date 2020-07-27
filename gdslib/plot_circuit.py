@@ -19,7 +19,7 @@ def get_transmission(
     return dict(wavelength_nm=w, s=s)
 
 
-def sweep_simulation(
+def plot_circuit(
     circuit,
     iport="input",
     oport="output",
@@ -61,4 +61,4 @@ if __name__ == "__main__":
 
     c = mzi()
     print(c.name)
-    sweep_simulation(mzi, logscale=False)
+    plot_circuit(mzi, logscale=False)

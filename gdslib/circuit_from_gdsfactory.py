@@ -35,7 +35,7 @@ def circuit_from_gdsfactory(component):
 
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
-    from gdslib import sweep_simulation
+    from gdslib import plot_circuit
     import pp
 
     c = pp.c.mzi()
@@ -43,5 +43,5 @@ if __name__ == "__main__":
     cm.elements["mmi1x2_12_0"].pins["W0"] = "input"
     cm.elements["mmi1x2_88_0"].pins["W0"] = "output"
 
-    sweep_simulation(cm)
+    plot_circuit(cm)
     plt.show()

@@ -2,6 +2,6 @@
 
 ```eval_rst
 .. automodule:: gdslib
-    :members: load, add_gc, plot_sparameters, get_transmission, sweep_simulation, sweep_simulation_montecarlo
+    :members: load, add_gc, plot_sparameters, get_transmission, plot_circuit, plot_circuit_montecarlo
 
 ```

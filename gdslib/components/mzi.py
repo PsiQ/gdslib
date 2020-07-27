@@ -1,7 +1,7 @@
 from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
-from gdslib import sweep_simulation
+from gdslib import plot_circuit
 from gdslib.autoname import autoname
 from gdslib.components.mmi1x2 import mmi1x2
 
@@ -47,7 +47,7 @@ def mzi(L0=1, DL=100, L2=10, y_model_factory=mmi1x2, wg=siepic.ebeam_wg_integral
         import gdslib as gl
 
         c = gl.mzi()
-        gl.sweep_simulation(c)
+        gl.plot_circuit(c)
 
 
     """
@@ -84,5 +84,5 @@ if __name__ == "__main__":
     import matplotlib.pyplot as plt
 
     c = mzi()
-    sweep_simulation(c)
+    plot_circuit(c)
     plt.show()

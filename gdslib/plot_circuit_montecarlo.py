@@ -3,7 +3,7 @@ import pp
 from simphony.simulation import MonteCarloSweepSimulation
 
 
-def sweep_simulation_montecarlo(circuit, wmin=1500e-9, wmax=1600e-9, runs=10, **kwargs):
+def plot_circuit_montecarlo(circuit, wmin=1500e-9, wmax=1600e-9, runs=10, **kwargs):
     """ Run runs sweep simulations and plots variation
     """
     circuit = pp.call_if_func(circuit)
@@ -26,4 +26,4 @@ def sweep_simulation_montecarlo(circuit, wmin=1500e-9, wmax=1600e-9, runs=10, **
 if __name__ == "__main__":
     from mzi import mzi
 
-    sweep_simulation_montecarlo(mzi)
+    plot_circuit_montecarlo(mzi)

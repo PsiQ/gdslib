@@ -4,7 +4,7 @@ from simphony.library import ebeam
 from simphony.library import siepic
 from simphony.netlist import Subcircuit
 
-from gdslib import sweep_simulation
+from gdslib import plot_circuit
 from gdslib.autoname import autoname
 
 
@@ -46,7 +46,7 @@ def ring_double_sipann(
 
         import simphony.library.gdsfactory as cl
         c = cl.ring()
-        cl.sweep_simulation(c)
+        cl.plot_circuit(c)
     """
     waveguide = waveguide() if callable(waveguide) else waveguide
     half_ring = coupler() if callable(coupler) else coupler
@@ -80,4 +80,4 @@ if __name__ == "__main__":
     hr = scee.HalfRing(w, t, r, gap)
     s_hr = SimphonyWrapper(hr)
     c = ring_double_sipann(coupler=s_hr)
-    sweep_simulation(c)
+    plot_circuit(c)
